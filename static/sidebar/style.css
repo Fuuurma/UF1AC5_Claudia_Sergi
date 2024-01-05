@@ -59,6 +59,7 @@ a{
 .text-title{
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
+    color: #000000;
 }
 
 .secondary-title{
@@ -186,6 +187,7 @@ a{
     width: 100%;
     top: 0;
     z-index: 1000; /* navbar por encima del contenido */
+    background-color: #3498db;
 }
 
 .navbar{
@@ -201,6 +203,7 @@ a{
     font-weight: bold;
     align-self: center;
     font-size: 32px;
+    color: #000000; 
 }
 
 .collapse{
@@ -212,10 +215,11 @@ a{
     margin: 12px;
     color: var(--dark);
     font-family: 'Poppins', sans-serif;
+    color: #000000; 
 }
 
 .nav-link:hover{
-    color: var(--primary-color);
+    color: white;
 }
 
 .search-box{
@@ -266,6 +270,8 @@ a{
 /* ----------- footer ---------- */
 #footer{
     padding-top: 4em;
+    background-color: #2c3e50;
+    color: white;
 }
 
 #footer .feature-post .flex-item{
