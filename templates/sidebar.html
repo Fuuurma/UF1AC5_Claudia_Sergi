@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
 
     <!-- custom style.css file -->
-    <link rel="stylesheet" href="../static/sidebar/style.css">
+    <!-- <link rel="stylesheet" href="../static/sidebar/style.css"> -->
+    <link rel="stylesheet" href="../static/index/style.css">
 
 </head>
 <body>
@@ -32,8 +33,8 @@
                 <!-- collapse on toggle button click -->
                 <div class="collapse">
                     <ul class="navbar-nav">
-                        <a href="#" class="nav-link">Home</a>
-                        <a href="#" class="nav-link">Blog</a>
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="article.html" class="nav-link">Blog</a>
                         <a href="#" class="nav-link">Pages</a>
                         <a href="#" class="nav-link">Categories</a>
                         <a href="#" class="nav-link">About</a>
@@ -68,19 +69,19 @@
                                 <!-- article heading -->
                                 <div class="headings text-center">
                                     <div class="category">
-                                        <a href="#" class="nav-link">Travel</a>
+                                        <a href="#" class="nav-link">Artificial Intelligence</a>
                                     </div>
         
                                     <div class="title">
-                                        <h2 class="text-title text-dark display-1">Looking for some feedback for this rejected track technology</h2>
+                                        <h2 class="text-title text-dark display-1">How to Develop Data-Driven AI Apps: A Guide to Making AI Services Directly From the Database</h2>
                                     </div>
         
                                     <div class="meta">
                                         <a href="#" class="link display-2 text-secondary px-1">
-                                            <i class="fas fa-user text-primary"></i> John Stephens
+                                            <i class="fas fa-user text-primary"></i> Paul Parkinson
                                         </a>
                                         <a href="#" class="link display-2 text-secondary px-1">
-                                            <i class="fas fa-clock text-primary"></i>  Clock Wed 02, 2019
+                                            <i class="fas fa-clock text-primary"></i>  JAN 09. 2024
                                         </a>
                                         <a href="#" class="link display-2 text-secondary px-1">
                                             <i class="fas fa-comments text-primary"></i> 12
@@ -91,46 +92,101 @@
         
                                 <!-- thumbnail  -->
                                 <div class="thumbnail mt-3">
-                                    <img src="../assets/img1.jpg" class="thumbnail" alt="">
+                                    <img src="../assets/blogImgAi.png" class="thumbnail" alt="">
                                 </div>
         
                                 <!-- content -->
                                 <div class="content text-dark display-2 secondary-title mt-3">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                                    <a rel="stylesheet" href="https://hackernoon.com/how-to-develop-data-driven-ai-apps-a-guide-to-making-ai-services-directly-from-the-database">
+                                    <p>
+                                        As AI services and the data they consume and create become more important and prevalent in various applications and processes, 
+                                        so do the platforms and architectures they are built upon. As usual, there is no “one size fits all”, however, what is briefly 
+                                        presented here is an optimized approach to such data-driven AI application architectures.
                                     </p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                                    <p>
+                                        All of the source code mentioned and more can be found here, and a free “Develop with Oracle AI and Database Services: 
+                                        Gen, Vision, Speech, Language, and OML” workshop (where all of the use cases are based on the U.N.’s 17 Sustainable Development Goals) 
+                                        giving many more examples can be found here.
                                     </p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                        blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                                    <p>
+                                        <b>
+                                            When the calls are instead made from the database itself, it provides an optimized architecture with various benefits including:
+                                        </b>
                                     </p>
+
+                                    <ol id="ol-sidebar">
+                                        <li>
+                                            Reduced network calls, thus reducing latency.
+                                        </li>
+                                        <li>
+                                            Reduced network calls, thus, increasing reliability.
+                                        </li>
+                                        <li>
+                                            Transactional (ACID) operations on AI and other data (and even messaging when using TxEventQ) which avoid the need for 
+                                            idempotent/duplicate processing logic, etc., and the related wasted resources there.
+                                        </li>
+                                        <li>
+                                            Processing optimization is due to the locality of data whether that data is stored directly in the database or an object store or other source. 
+                                            This is because the Oracle database provides a robust functional frontend to otherwise dumb object storage buckets, and the database provides 
+                                            many options to either sync or optimally operate on data in place in the object store and other data sources.
+                                        </li>
+                                        <li>
+                                            Enhanced security due to a common authentication mechanism and reuse of a famously robust database and cloud security infrastructure.
+                                        </li>
+                                        <li>
+                                            Reduced overall configuration as calls are made from a central location. The entry point to the database itself can be exposed as a 
+                                            Rest endpoint (using ORDS) with a single click, and of course, drivers in various languages can be used to access the database as well.
+                                        </li>
+                                        <li>
+                                            Vector database advantages. This topic is a blog unto itself, and one I’ll release as a follow-on especially as Oracle has and is adding several powerful features in this area.
+                                        </li>
+                                        <li>
+                                            Oracle Database Machine Learning. In addition to various AI services, the Oracle database itself has had a machine-learning engine for many years. 
+                                            OML streamlines the ML lifecycle, offering scalable SQL, R, Python, REST, AutoML, and no-code tools with over 30 in-database algorithms, 
+                                            enhancing data synchronization and security by processing data directly in the database.
+                                        </li>
+                                        <li>
+                                            Oracle Autonomous Database. Select AI which enables querying data using natural language and generating SQL that is specific to your database.
+                                        </li>
+                                        <li>
+                                            Oracle Autonomous Database. AI Vector Search, which includes a new vector data type, vector indexes, and vector search SQL operators, 
+                                            enables the Oracle Database to store the semantic content of documents, images, and other unstructured data as vectors, and use these to run fast similarity queries.
+                                        </li>
+                                    </ol>
+                                    <p>
+                                        These new capabilities also support RAG (Retrieval Augmented Generation) which provides higher accuracy and avoids having to expose private data by including it in the LLM training data.
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Again, there are many different AI application flows and requirements, but a basic comparison of the two approaches can be visualized in the following way:
+                                        </b>
+                                    </p>
+                                    .
+                                    <div class="img-container">
+                                        <img src="../assets/blogAiContentImg.jpeg" alt="AI Image">
+
+                                    </div>
                                 </div>
+
+                               <h3>
+                                    In Conclusion...
+                               </h3>
+                               <p>
+                                This was a quick blog showing an architectural pattern for developing data-driven AI Apps by making calls to AI services directly from the database.
+                               </p>
+                               <p>
+                                Thanks so much for reading, and please let me know of any questions or feedback you may have.
+                               </p>
                             </article>
         
                             <!-- post footer -->
                             <div class="post-footer mb-3">
                                 <div class="post-tags d-flex flex-wrap justify-content-center">
-                                    <a href="#" class="nav-link btn bg-light">Travel</a>
-                                    <a href="#" class="nav-link btn bg-light">Food</a>
-                                    <a href="#" class="nav-link btn bg-light">Lifestyle</a>
+                                    <a href="#" class="nav-link btn bg-light">Cloud</a>
+                                    <a href="#" class="nav-link btn bg-light">AI Development</a>
+                                    <a href="#" class="nav-link btn bg-light">Oracle Database</a>
                                     <a href="#" class="nav-link btn bg-light">Techonogy</a>
-                                    <a href="#" class="nav-link btn bg-light">Fashion</a>
+                                    <a href="#" class="nav-link btn bg-light">AI Architecture</a>
                                 </div>
         
                                 <div class="post-author text-center">
@@ -139,11 +195,10 @@
                                     </div>
         
                                     <div class="author-info py-2">
-                                        <h3 class="text-dark">John Stephens</h3>
+                                        <h3 class="text-dark">Paul Parkinson</h3>
         
                                         <p class="text-secondary secondary-title">
-                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                            Recusandae, sequi! In harum laborum ipsa voluptatibus doloremque nulla, tempore aut veritatis.
+                                            Architect and Developer Advocate, Microservices with Oracle Database. XR
                                         </p>
         
                                         <div class="post-tags d-flex flex-wrap justify-content-center">
@@ -169,15 +224,14 @@
                                             <article class="article text-center">
                                                 <div class="d-flex">
                                                     <a href="#">
-                                                        <img src="../assets/img9.jpg" class="object-fit" alt="">
+                                                        <img src="../assets/maxina.jpeg" class="object-fit" alt="">
                                                     </a>
                                                     <div class="cart-body px-1">
                                                         <div class="category">
-                                                            <a href="#" class="link text-primary text-secondary">Fashion</a>
+                                                            <a href="#" class="link text-primary text-secondary">Technology</a>
                                                         </div>
                                                         <a href="#" class="text-title display-1 text-dark">
-                                                            Looking for some feedback for this rejected track
-                                                            technology
+                                                            The Most Expensive Technology on Earth
                                                         </a>
                                                     </div>
                                                 </div>
@@ -193,15 +247,14 @@
                                             <article class="article text-center">
                                                 <div class="d-flex">
                                                     <a href="#">
-                                                        <img src="../assets/img8.jpg" class="object-fit" alt="">
+                                                        <img src="../assets/scraping.jpeg" class="object-fit" alt="">
                                                     </a>
                                                     <div class="cart-body px-1">
                                                         <div class="category">
-                                                            <a href="#" class="link text-primary text-secondary">Fashion</a>
+                                                            <a href="#" class="link text-primary text-secondary">Technology</a>
                                                         </div>
                                                         <a href="#" class="text-title display-1 text-dark">
-                                                            Looking for some feedback for this rejected track
-                                                            technology
+                                                            Content Scraping: An Unforgivable Theft of Creativity
                                                         </a>
                                                     </div>
                                                 </div>
@@ -262,12 +315,11 @@
                                     <!-- comment form -->
                                     <div class="comment-form">
         
-                                        <h3 class="text-center display-1 secondary-title py-2">Leave Comment</h3>
+                                        <h3 class="text-center display-1 secondary-title py-2">Leave a Comment!</h3>
         
                                         <div class="d-flex justify-content-between flex-wrap">
                                             <input type="text" class="form-control" placeholder="Name">
                                             <input type="email" class="form-control" placeholder="Email">
-                                            <input type="text" class="form-control" placeholder="Website">
                                         </div>
         
                                         <textarea class="form-control mt-3" placeholder="Message" rows="10"></textarea>
@@ -288,20 +340,20 @@
                                     <h2 class="text-center text-dark">Categories</h2>
 
                                     <a href="#" class="d-flex justify-content-between text-dark">
-                                        <span>Design</span>
-                                        <span>5</span>
+                                        <span>Technology</span>
+                                        <span>12</span>
                                     </a>
                                     <a href="#" class="d-flex justify-content-between text-dark">
-                                        <span>Graphic</span>
+                                        <span>AI</span>
                                         <span>8</span>
                                     </a>
                                     <a href="#" class="d-flex justify-content-between text-dark">
-                                        <span>Illistration</span>
-                                        <span>3</span>
+                                        <span>Bussiness</span>
+                                        <span>5</span>
                                     </a>
                                     <a href="#" class="d-flex justify-content-between text-dark">
-                                        <span>Fashion</span>
-                                        <span>2</span>
+                                        <span>Gaming</span>
+                                        <span>3</span>
                                     </a>
                                 </section>
 
@@ -315,21 +367,21 @@
                                         <article class="article">
                                             <div class="d-flex">
                                                 <a href="#">
-                                                    <img src="../assets/img1.jpg" class="rounded px-1" alt="">
+                                                    <img src="../assets/openai.webp" class="rounded px-1" alt="">
                                                 </a>
                                                 <div class="cart-body">
                                                     <div class="trending-category">
                                                         <a href="#" class="link text-primary">
-                                                            Fashion
+                                                            Bussiness
                                                         </a>
                                                     </div>
                                                     <a href="#" class="text-title display-2 text-dark">
-                                                        Looking for some feedback for this rejected track technology
+                                                        OpenAI claims NY Times copyright lawsuit is without merit
                                                     </a>
                                                     <p class="secondary-title text-secondary display-3">
                                                         <span>
                                                             <i class="far fa-clock text-primary"></i>
-                                                             Clock Wed 02, 2019
+                                                            JAN 10. 2024
                                                         </span>
                                                     </p>                                                    
                                                 </div>
@@ -342,21 +394,21 @@
                                         <article class="article">
                                             <div class="d-flex">
                                                 <a href="#">
-                                                    <img src="../assets/img2.jpg" class="rounded px-1" alt="">
+                                                    <img src="../assets/wifi-logo.webp" class="rounded px-1" alt="">
                                                 </a>
                                                 <div class="cart-body">
                                                     <div class="trending-category">
                                                         <a href="#" class="link text-primary">
-                                                            Fashion
+                                                            Network
                                                         </a>
                                                     </div>
                                                     <a href="#" class="text-title display-2 text-dark">
-                                                        Looking for some feedback for this rejected track technology
+                                                        What Is Wi-Fi 7? Here’s Everything You Need to Know
                                                     </a>
                                                     <p class="secondary-title text-secondary display-3">
                                                         <span>
                                                             <i class="far fa-clock text-primary"></i>
-                                                             Clock Wed 02, 2019
+                                                             JAN 8. 2024
                                                         </span>
                                                     </p>                                                    
                                                 </div>
@@ -369,21 +421,21 @@
                                         <article class="article">
                                             <div class="d-flex">
                                                 <a href="#">
-                                                    <img src="../assets/img3.jpg" class="rounded px-1" alt="">
+                                                    <img src="../assets/comuicationImg.webp" class="rounded px-1" alt="">
                                                 </a>
                                                 <div class="cart-body">
                                                     <div class="trending-category">
                                                         <a href="#" class="link text-primary">
-                                                            Fashion
+                                                            Mobile
                                                         </a>
                                                     </div>
                                                     <a href="#" class="text-title display-2 text-dark">
-                                                        Looking for some feedback for this rejected track technology
+                                                        The Fight to Unite iPhone and Android Users Is Far From Over
                                                     </a>
                                                     <p class="secondary-title text-secondary display-3">
                                                         <span>
                                                             <i class="far fa-clock text-primary"></i>
-                                                             Clock Wed 02, 2019
+                                                            JAN 10. 2024
                                                         </span>
                                                     </p>                                                    
                                                 </div>
@@ -396,21 +448,20 @@
                                         <article class="article">
                                             <div class="d-flex">
                                                 <a href="#">
-                                                    <img src="../assets/img4.jpg" class="rounded px-1" alt="">
+                                                    <img src="../assets/logo_blog_tech.jpeg" class="rounded px-1" alt="">
                                                 </a>
                                                 <div class="cart-body">
                                                     <div class="trending-category">
                                                         <a href="#" class="link text-primary">
-                                                            Fashion
+                                                            Technology
                                                         </a>
                                                     </div>
                                                     <a href="#" class="text-title display-2 text-dark">
-                                                        Looking for some feedback for this rejected track technology
-                                                    </a>
+                                                        Technology's 24 Most Important Social Networks for Content Distribution                                                    </a>
                                                     <p class="secondary-title text-secondary display-3">
                                                         <span>
                                                             <i class="far fa-clock text-primary"></i>
-                                                             Clock Wed 02, 2019
+                                                             JAN 09. 2024
                                                         </span>
                                                     </p>                                                    
                                                 </div>
@@ -428,67 +479,7 @@
                 </section>
             <!-- .Post Content -->
 
-            <!-- Swiper slider -->
-                <section class="slider">
-                    <div class="container">
-
-                        <!-- Slider main container -->
-                            <div class="swiper-container">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../assets/slider/img1.jpg" class="img-fluid" alt="">
-                                        </a>
-                                    </div>
-                                     <!-- Slides -->
-                                      <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../assets/slider/img2.jpg" class="img-fluid" alt="">
-                                        </a>
-                                    </div>
-                                     <!-- Slides -->
-                                      <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../assets/slider/img3.jpg" class="img-fluid" alt="">
-                                        </a>
-                                    </div>
-                                        <!-- Slides -->
-                                             <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../assets/slider/img4.jpg" class="img-fluid" alt="">
-                                        </a>
-                                    </div>
-                                        <!-- Slides -->
-                                        <div class="swiper-slide">
-                                            <a href="#">
-                                                <img src="../assets/slider/img5.jpg" class="img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                            <!-- Slides -->
-                                            <div class="swiper-slide">
-                                                <a href="#">
-                                                    <img src="../assets/slider/img6.jpg" class="img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                                <!-- Slides -->
-                                                <div class="swiper-slide">
-                                                    <a href="#">
-                                                        <img src="../assets/slider/img7.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                    <!-- Slides -->
-
-                                </div>
-                            </div>
-
-                    </div>
-                </section>
-             <!-- .Swiper slider -->
+           
 
        </main>
     <!-- .Main Site -->
@@ -531,14 +522,13 @@
                                <article class="article">
                                    <div class="d-flex">
                                        <a href="#">
-                                           <img src="../assets/img9.jpg" class="object-fit px-1" alt="">
+                                           <img src="../assets/openai.webp" class="object-fit px-1" alt="">
                                            <div class="px-1">
                                                <a href="#" class="text-title display-2 text-dark">
-                                                Looking for some feedback for this rejected track
-                                                technology
+                                                OpenAI claims NY Times copyright lawsuit is without merit
                                                </a>
                                                <p class="secondary-title text-secondary display-3">
-                                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
+                                                    <span><i class="far fa-clock text-primary"></i> JAN 10. 2024   </span>
                                                </p>
                                            </div>
                                        </a>
@@ -588,11 +578,11 @@
 
                         <div class="tags">
                             <div class="d-flex flex-wrap">
-                                <a href="#" class="nav-link btn bg-light">Travel</a>
-                                <a href="#" class="nav-link btn bg-light">Food</a>
-                                <a href="#" class="nav-link btn bg-light">Lifestyle</a>
+                                <a href="#" class="nav-link btn bg-light">Cloud</a>
+                                <a href="#" class="nav-link btn bg-light">AI Development</a>
+                                <a href="#" class="nav-link btn bg-light">Oracle Database</a>
                                 <a href="#" class="nav-link btn bg-light">Techonogy</a>
-                                <a href="#" class="nav-link btn bg-light">Fashion</a>
+                                <a href="#" class="nav-link btn bg-light">AI Architecture</a>
                             </div>
                         </div>
 
@@ -631,3 +621,71 @@
     <script src="../static/sidebar/main.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- Slider -->
+
+
+ <!-- Swiper slider -->
+ <section class="slider">
+    <div class="container">
+
+        <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../assets/slider/img1.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                     <!-- Slides -->
+                      <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../assets/slider/img2.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                     <!-- Slides -->
+                      <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../assets/slider/img3.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                        <!-- Slides -->
+                             <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../assets/slider/img4.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="../assets/slider/img5.jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../assets/slider/img6.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="../assets/slider/img7.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                    <!-- Slides -->
+
+                </div>
+            </div>
+
+    </div>
+</section>
+<!-- .Swiper slider -->

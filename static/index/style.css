@@ -338,6 +338,25 @@ a{
     color: var(--light);
 }
 
+.img-container {
+    height: 750px;
+    width: 100%;
+    overflow: hidden; 
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.img-container img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+}
+
+#ol-sidebar li{
+    margin-bottom: 10px;
+}
+
+
 /* ----------- .sidebar page ------- */
 
 /* ----------- sticky ------- */
