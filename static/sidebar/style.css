@@ -284,9 +284,17 @@ a{
     font-size: 15px;
 }
 
+#footer .secondary-title.text-secondary {
+    color: gray;
+}
+
+#footer .tags .gray-text li span {
+    color: gray;
+}
+
 #footer .copyrights{
     padding: 10px 0;
-    border-top: 2px solid var(--light);
+    /* border-top: 2px solid var(--light); */
 }
 
 
@@ -299,13 +307,51 @@ a{
     margin-bottom: 4em;
 }
 
-.post-footer .post-author{
-    position: relative;
-    margin-top: 4em;
+.post-footer .card-body {
+    display: flex;
+    align-items: flex-start;
     background-color: var(--light);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 2em; 
 }
 
-.post-footer .post-author::after{
+
+.author-avatar {
+    position: relative;
+    overflow: hidden;
+}
+
+.author-avatar img {
+    display: block;
+    width: 80%;
+    height: auto;
+    transition: filter 0.3s ease;
+}
+
+.author-avatar:hover img {
+    filter: brightness(120%);
+}
+
+.author-avatar::before {
+    position: absolute;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease;
+    pointer-events: none;
+}
+
+.author-avatar:hover::before {
+    border-color: #85154d;
+}
+
+
+
+.post-footer .author-info {
+    flex: 1;
+    text-align: justify;
+}
+
+.post-footer .card-body::after {
     background-color: white;
     content: '';
     position: absolute;
@@ -316,15 +362,23 @@ a{
     z-index: 0;
 }
 
-.post-footer .post-author .author-avatar{
+.post-footer .author-avatar {
     margin: 0 auto;
     margin-bottom: 1em;
     position: inherit;
     z-index: 1;
 }
 
-.post-footer .post-comments .reply{
-    padding-left: 7em;
+.post-footer .more-about-author {
+    color: #3498db;
+    margin-top: 1em;
+    cursor: pointer; 
+    text-decoration: none; 
+    transition: text-decoration 0.3s ease; 
+}
+
+.post-footer .more-about-author:hover {
+    text-decoration: underline;
 }
 
 .form-control{
