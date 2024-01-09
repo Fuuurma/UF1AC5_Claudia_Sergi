@@ -253,6 +253,24 @@ a{
     margin-bottom: 3em;
 }
 
+#main-hero-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 0px 50px;
+  }
+  
+  .grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+
+
+
 /* ----------- .Main Section ---------- */
 
 /* ----------- footer ---------- */

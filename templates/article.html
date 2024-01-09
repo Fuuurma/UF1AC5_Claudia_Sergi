@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gridy Blog</title>
+    <title>Article</title>
 
     <!-- font awesome icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
 
     <!-- custom style.css file -->
-    <link rel="stylesheet" href="../static/article/style.css">
+    <link rel="stylesheet" href="../static/index/style.css">
 
 </head>
 <body>
@@ -64,19 +64,20 @@
                         <!-- article heading -->
                         <div class="headings text-center">
                             <div class="category">
-                                <a href="#" class="nav-link">Travel</a>
+                                <a href="#" class="nav-link">Artificial Intelligence</a>
                             </div>
 
                             <div class="title">
-                                <h2 class="text-title text-dark display-1">Looking for some feedback for this rejected track technology</h2>
+                                <h2 class="text-title text-dark display-1">How to Develop Data-Driven AI Apps: A Guide to Making AI Services Directly From the Database</h2>
+                                
                             </div>
 
                             <div class="meta">
                                 <a href="#" class="link display-2 text-secondary px-1">
-                                    <i class="fas fa-user text-primary"></i> John Stephens
+                                    <i class="fas fa-user text-primary"></i> Paul Parkinson
                                 </a>
                                 <a href="#" class="link display-2 text-secondary px-1">
-                                    <i class="fas fa-clock text-primary"></i>  Clock Wed 02, 2019
+                                    <i class="fas fa-clock text-primary"></i>  JAN 08. 2024
                                 </a>
                                 <a href="#" class="link display-2 text-secondary px-1">
                                     <i class="fas fa-comments text-primary"></i> 12
@@ -87,46 +88,97 @@
 
                         <!-- thumbnail  -->
                         <div class="thumbnail mt-3">
-                            <img src="../assets/img1.jpg" class="thumbnail" alt="">
+                            <img src="../assets/blogImgAi.png" class="thumbnail" alt="">
                         </div>
 
                         <!-- content -->
                         <div class="content text-dark display-2 secondary-title mt-3">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            <p>
+                                As AI services and the data they consume and create become more important and prevalent in various applications and processes, 
+                                so do the platforms and architectures they are built upon. As usual, there is no “one size fits all”, however, what is briefly 
+                                presented here is an optimized approach to such data-driven AI application architectures.
                             </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            <p> 
+                                All of the source code mentioned and more can be found here, and a free “Develop with Oracle AI and Database Services: 
+                                Gen, Vision, Speech, Language, and OML” workshop (where all of the use cases are based on the U.N.’s 17 Sustainable Development Goals) 
+                                giving many more examples can be found here.
                             </p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum itaque 
-                                blanditiis adipisci aliquam dolore consequuntur fuga sed consectetur quas perspiciatis?
+                            <p>
+                                <b>
+                                    When the calls are instead made from the database itself, it provides an optimized architecture with various benefits including:
+                                </b>
                             </p>
+                            <ol id="ol-sidebar">
+                                <li>
+                                    Reduced network calls, thus reducing latency.
+                                </li>
+                                <li>
+                                    Reduced network calls, thus, increasing reliability.
+                                </li>
+                                <li>
+                                    Transactional (ACID) operations on AI and other data (and even messaging when using TxEventQ) which avoid the need for 
+                                    idempotent/duplicate processing logic, etc., and the related wasted resources there.
+                                </li>
+                                <li>
+                                    Processing optimization is due to the locality of data whether that data is stored directly in the database or an object store or other source. 
+                                    This is because the Oracle database provides a robust functional frontend to otherwise dumb object storage buckets, and the database provides 
+                                    many options to either sync or optimally operate on data in place in the object store and other data sources.
+                                </li>
+                                <li>
+                                    Enhanced security due to a common authentication mechanism and reuse of a famously robust database and cloud security infrastructure.
+                                </li>
+                                <li>
+                                    Reduced overall configuration as calls are made from a central location. The entry point to the database itself can be exposed as a 
+                                    Rest endpoint (using ORDS) with a single click, and of course, drivers in various languages can be used to access the database as well.
+                                </li>
+                                <li>
+                                    Vector database advantages. This topic is a blog unto itself, and one I’ll release as a follow-on especially as Oracle has and is adding several powerful features in this area.
+                                </li>
+                                <li>
+                                    Oracle Database Machine Learning. In addition to various AI services, the Oracle database itself has had a machine-learning engine for many years. 
+                                    OML streamlines the ML lifecycle, offering scalable SQL, R, Python, REST, AutoML, and no-code tools with over 30 in-database algorithms, 
+                                    enhancing data synchronization and security by processing data directly in the database.
+                                </li>
+                                <li>
+                                    Oracle Autonomous Database. Select AI which enables querying data using natural language and generating SQL that is specific to your database.
+                                </li>
+                                <li>
+                                    Oracle Autonomous Database. AI Vector Search, which includes a new vector data type, vector indexes, and vector search SQL operators, 
+                                    enables the Oracle Database to store the semantic content of documents, images, and other unstructured data as vectors, and use these to run fast similarity queries.
+                                </li>
+                            </ol>
+                            <p>
+                                These new capabilities also support RAG (Retrieval Augmented Generation) which provides higher accuracy and avoids having to expose private data by including it in the LLM training data.
+                            </p>
+                            <p>
+                                <b>
+                                    Again, there are many different AI application flows and requirements, but a basic comparison of the two approaches can be visualized in the following way:
+                                </b>
+                            </p>
+
+                            <div class="img-container">
+                                <img src="../assets/blogAiContentImg.jpeg" alt="AI Image">
+                            </div>
                         </div>
+                        <h3>
+                            In Conclusion...
+                       </h3>
+                       <p>
+                        This was a quick blog showing an architectural pattern for developing data-driven AI Apps by making calls to AI services directly from the database.
+                       </p>
+                       <p>
+                        Thanks so much for reading, and please let me know of any questions or feedback you may have.
+                       </p>
                     </article>
 
                     <!-- post footer -->
                     <div class="post-footer mb-3">
                         <div class="post-tags d-flex flex-wrap justify-content-center">
-                            <a href="#" class="nav-link btn bg-light">Travel</a>
-                            <a href="#" class="nav-link btn bg-light">Food</a>
-                            <a href="#" class="nav-link btn bg-light">Lifestyle</a>
-                            <a href="#" class="nav-link btn bg-light">Techonogy</a>
-                            <a href="#" class="nav-link btn bg-light">Fashion</a>
+                            <a href="#" class="nav-link btn bg-light">Technology</a>
+                            <a href="#" class="nav-link btn bg-light">Artificial Intelligence</a>
+                            <a href="#" class="nav-link btn bg-light">Bussiness</a>
+                            <a href="#" class="nav-link btn bg-light">Gaming</a>
+                            <a href="#" class="nav-link btn bg-light">Mobile</a>
                         </div>
 
                         <div class="post-author text-center">
@@ -135,11 +187,10 @@
                             </div>
 
                             <div class="author-info py-2">
-                                <h3 class="text-dark">John Stephens</h3>
+                                <h3 class="text-dark">Paul Parkinson</h3>
 
                                 <p class="text-secondary secondary-title">
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                    Recusandae, sequi! In harum laborum ipsa voluptatibus doloremque nulla, tempore aut veritatis.
+                                    Architect and Developer Advocate, Microservices with Oracle Database. XR
                                 </p>
 
                                 <div class="post-tags d-flex flex-wrap justify-content-center">
@@ -165,15 +216,14 @@
                                     <article class="article text-center">
                                         <div class="d-flex">
                                             <a href="#">
-                                                <img src="../assets/img9.jpg" class="object-fit" alt="">
+                                                <img src="../assets/maxina.jpeg" class="object-fit" alt="">
                                             </a>
                                             <div class="cart-body px-1">
                                                 <div class="category">
                                                     <a href="#" class="link text-primary text-secondary">Fashion</a>
                                                 </div>
                                                 <a href="#" class="text-title display-1 text-dark">
-                                                    Looking for some feedback for this rejected track
-                                                    technology
+                                                    The Most Expensive Technology on Earth
                                                 </a>
                                             </div>
                                         </div>
@@ -190,15 +240,14 @@
                                         <div class="d-flex">
                                             <div class="cart-body px-1">
                                                 <div class="category">
-                                                    <a href="#" class="link text-primary text-secondary">Fashion</a>
+                                                    <a href="#" class="link text-primary text-secondary">Technology</a>
                                                 </div>
                                                 <a href="#" class="text-title display-1 text-dark">
-                                                    Looking for some feedback for this rejected track
-                                                    technology
+                                                    Content Scraping: An Unforgivable Theft of Creativity
                                                 </a>
                                             </div>
                                             <a href="#">
-                                                <img src="../assets/img8.jpg" class="object-fit" alt="">
+                                                <img src="../assets/scraping.jpeg" class="object-fit" alt="">
                                             </a>
                                         </div>
                                     </article>
@@ -216,9 +265,9 @@
                                             <img src="../assets/face/face1.jpg" class="rounded" alt="">
                                         </div>
                                         <div class="comment-content">
-                                            <h5 class="display-2 m-0">Brandon Kelley</h5>
+                                            <h5 class="display-2 m-0">User 1 </h5>
                                             <p class="title-secondary text-dark">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis.
+                                                Pedazo articulo chaval! 
                                             </p>
                                         </div>
                                     </div>
@@ -229,9 +278,9 @@
                                                 <img src="../assets/face/face2.jpg" class="rounded" alt="">
                                             </div>
                                             <div class="comment-content">
-                                                <h5 class="display-2 m-0">Brandon Kelley</h5>
+                                                <h5 class="display-2 m-0">User 2 reply</h5>
                                                 <p class="title-secondary text-dark">
-                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis.
+                                                    Articulo muy bien escrito. Estoy totalmente en contra por eso.
                                                 </p>
                                             </div>
                                         </div>
@@ -244,9 +293,9 @@
                                             <img src="../assets/face/face3.jpg" class="rounded" alt="">
                                         </div>
                                         <div class="comment-content">
-                                            <h5 class="display-2 m-0">Brandon Kelley</h5>
+                                            <h5 class="display-2 m-0">User 3 </h5>
                                             <p class="title-secondary text-dark">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore aliqua. Quis ipsum suspendisse ultrices gravida lacus vel facilisis.
+                                                Comentario Comentario Comentario Comentario Comentario
                                             </p>
     
                                         </div>
@@ -276,65 +325,7 @@
             <!-- .Post Content -->
 
             <!-- Swiper slider -->
-                <section class="slider">
-                    <div class="container">
-
-                        <!-- Slider main container -->
-                            <div class="swiper-container">
-                                <!-- Additional required wrapper -->
-                                <div class="swiper-wrapper">
-                                    <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../assets/slider/img1.jpg" class="img-fluid" alt="">
-                                        </a>
-                                    </div>
-                                     <!-- Slides -->
-                                      <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../assets/slider/img2.jpg" class="img-fluid" alt="">
-                                        </a>
-                                    </div>
-                                     <!-- Slides -->
-                                      <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../assets/slider/img3.jpg" class="img-fluid" alt="">
-                                        </a>
-                                    </div>
-                                        <!-- Slides -->
-                                             <!-- Slides -->
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../assets/slider/img4.jpg" class="img-fluid" alt="">
-                                        </a>
-                                    </div>
-                                        <!-- Slides -->
-                                        <div class="swiper-slide">
-                                            <a href="#">
-                                                <img src="../assets/slider/img5.jpg" class="img-fluid" alt="">
-                                            </a>
-                                        </div>
-                                            <!-- Slides -->
-                                            <div class="swiper-slide">
-                                                <a href="#">
-                                                    <img src="../assets/slider/img6.jpg" class="img-fluid" alt="">
-                                                </a>
-                                            </div>
-                                                <!-- Slides -->
-                                                <div class="swiper-slide">
-                                                    <a href="#">
-                                                        <img src="../assets/slider/img7.jpg" class="img-fluid" alt="">
-                                                    </a>
-                                                </div>
-                                                    <!-- Slides -->
-
-                                </div>
-                            </div>
-
-                    </div>
-                </section>
+                
              <!-- .Swiper slider -->
 
        </main>
@@ -345,27 +336,21 @@
            <div class="container">
                <div class="row mb-3">
                    <div class="col-3">
-                       <h2 class="footer-title secondary-title">About Us</h2>
+                       <h2 class="footer-title secondary-title">Sobre nosotros</h2>
 
                        <div class="secondary-title text-secondary">
                             <p class="mt-2 ">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                                Deserunt quis voluptate alias illum modi tenetur, iste voluptatem illo. Accusantium, corrupti!
+                                Las notícias del sector de las nuevas tecnologías, telecomunicaciones, informática y emprendedores las encontarás aquí
                             </p>
                             
-                            <address>
-                                <i class="fas fa-map-marker-alt text-primary"></i> 
-                                5 South Main Street Los Angeles, ZZ-96110 USA
-                            </address>
-
                             <div class="phone">
                                 <i class="fas fa-mobile text-primary"></i> 
-                                125-896-485
+                                (+34) 900 681 433
                             </div>
 
                             <div class="email">
                                 <i class="fas fa-envelope text-primary"></i> 
-                                dailysupport@gmail.com
+                                tecnonews@gmail.com
                             </div>
 
                        </div>
@@ -378,14 +363,13 @@
                                <article class="article">
                                    <div class="d-flex">
                                        <a href="#">
-                                           <img src="../assets/img9.jpg" class="object-fit px-1" alt="">
+                                           <img src="../assets/openai.webp" class="object-fit px-1" alt="">
                                            <div class="px-1">
                                                <a href="#" class="text-title display-2 text-dark">
-                                                Looking for some feedback for this rejected track
-                                                technology
+                                                OpenAI claims NY Times copyright lawsuit is without merit
                                                </a>
                                                <p class="secondary-title text-secondary display-3">
-                                                    <span><i class="far fa-clock text-primary"></i> Clock Wed 02, 2021 </span>
+                                                    <span><i class="far fa-clock text-primary"></i> JAN 10. 2024 </span>
                                                </p>
                                            </div>
                                        </a>
@@ -434,13 +418,13 @@
                         <h2 class="footer-title secondary-title">Tags</h2>
 
                         <div class="tags">
-                            <div class="d-flex flex-wrap">
-                                <a href="#" class="nav-link btn bg-light">Travel</a>
-                                <a href="#" class="nav-link btn bg-light">Food</a>
-                                <a href="#" class="nav-link btn bg-light">Lifestyle</a>
-                                <a href="#" class="nav-link btn bg-light">Techonogy</a>
-                                <a href="#" class="nav-link btn bg-light">Fashion</a>
-                            </div>
+                            <ul class="list-unstyled gray-text">
+                                <li><span class="text-dark">Noticias</span></li>
+                                <li><span class="text-dark">Entrevistas</span></li>
+                                <li><span class="text-dark">Opiniones</span></li>
+                                <li><span class="text-dark">TecnonewsWorld</span></li>
+                                <li><span class="text-dark">Area empresas</span></li>
+                            </ul>
                         </div>
 
                         <h2 class="footer-title secondary-title mt-2">Social</h2>
@@ -478,3 +462,66 @@
     <script src="/static/article/main.js"></script>
 </body>
 </html>
+
+
+
+
+<section class="slider">
+    <div class="container">
+
+        <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../assets/slider/img1.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                     <!-- Slides -->
+                      <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../assets/slider/img2.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                     <!-- Slides -->
+                      <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../assets/slider/img3.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                        <!-- Slides -->
+                             <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="../assets/slider/img4.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <img src="../assets/slider/img5.jpg" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="../assets/slider/img6.jpg" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <a href="#">
+                                        <img src="../assets/slider/img7.jpg" class="img-fluid" alt="">
+                                    </a>
+                                </div>
+                                    <!-- Slides -->
+
+                </div>
+            </div>
+
+    </div>
+</section>
