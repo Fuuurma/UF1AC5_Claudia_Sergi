@@ -237,7 +237,7 @@ a{
 /* ----------- Main Section ---------- */
 
 #site-main{
-    margin-top: 8em;
+    margin-top: 6em;
 }
 
 #posts{
@@ -253,11 +253,17 @@ a{
     margin-bottom: 3em;
 }
 
+.hero-title{
+    margin-left: 55px;
+    text-decoration: underline;
+}
+
 #main-hero-content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
     gap: 16px;
     margin: 0px 50px;
+    width: 90%;
   }
   
   .grid-item {
@@ -267,7 +273,25 @@ a{
     border: 1px solid #ddd;
     border-radius: 8px;
   }
+
+  .grid-item:hover{
+    background-color: var(--secondary-color);
+}
+
+
   
+
+  @media (max-width: 768px) {
+    #main-hero-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    #main-hero-content {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
@@ -373,6 +397,31 @@ a{
 #ol-sidebar li{
     margin-bottom: 10px;
 }
+
+/* ----------- .Home cards ------- */
+.card-to-blogs{
+    text-decoration: none;
+}
+
+.card-img-container {
+    height: 200px;
+    min-height: 200px;
+    border-bottom: 1px solid var(--dark);
+    contain: content;
+    overflow: hidden;
+    width: 400px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
 
 
 /* ----------- .sidebar page ------- */
