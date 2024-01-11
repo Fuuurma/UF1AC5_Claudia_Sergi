@@ -1,0 +1,13 @@
+Cosas que se podrian hacer:
+- Pasar los estilos a sass
+Ojo! Seguramente al aplicar sass por 1a vez sobreescribira el css. Cambiarle el nombre al archivo?
+
+- Rellenar los articulos con info real de alguna web
+- Cambiar donde aun hay datos del template (feature post, about us, tags..)
+- Poner bien links que puedan faltar
+- Enlazar los tags o social con algun link?
+- Hacer que sidebar sea una especie de pagina para select blog o categoria?
+- funcionalidad para formulario?
+- Hacer about us?
+- Poner en Our posts (Home) -> Author, date, categoria.. 
+- Algo mas?
