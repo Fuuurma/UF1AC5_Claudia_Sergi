@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
+    <title>Tecno Blog</title>
 
     <!-- font awesome icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -12,16 +12,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
 
     <!-- custom style.css file -->
+    <!-- <link rel="stylesheet" href="../static/sidebar/style.css"> -->
     <link rel="stylesheet" href="../static/index/style.css">
 
 </head>
 <body>
     
     <!-- Header -->
-       <header id="header" class="shadow bg-light">
+       <header id="header" class="shadow bg-light fixed-nav">
            <nav class="container navbar">
                <a href="/index.html" class="nav-brand text-dark">
-                    Gridy
+                    Tecno News
                 </a>
 
                 <!-- toggle button -->
@@ -58,10 +59,7 @@
                             <div class="search-box">
                                 <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
                             </div>
-                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="nav-link"><i class="fa fa-user"></i></a>
                       </ul>
                   </div>
            </nav>
@@ -73,114 +71,114 @@
 
             <!-- Post Content -->
                 <section class="container">
-                    <article id="post">
-                        <!-- article heading -->
-                        <div class="headings text-center">
-                            <div class="category">
-                                <a href="#" class="nav-link">Artificial Intelligence</a>
-                            </div>
+                    <div class="layout-2 row">
+                        <div class="col-8">
+                            <article id="post">
+                                <!-- article heading -->
+                                <div class="headings text-center">
+                                    <div class="tags mb-3">
+                                        <a href="#" class="nav-link btn bg-light">Inteligencia Artifical</a>
+                                    </div>
+        
+                                    <div class="title">
+                                        <h2 class="text-title text-dark display-1">Cómo desarrollar aplicaciones de IA basadas en datos: una guía para crear servicios de IA directamente desde la base de datos</h2>
+                                    </div>
+        
+                                    <div class="meta">
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-comments text-primary"></i> 12
+                                            <i class="fas fa-user text-primary"></i> Carlos Pérez
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-clock text-primary"></i>  18.12.2023
+                                        </a>
+                                    </div>
+        
+                                </div>
+        
+                                <!-- thumbnail  -->
+                                <div class="thumbnail mt-3">
+                                    <img src="../assets/blogImgAi.png" class="thumbnail" alt="">
+                                </div>
+        
+                                <!-- content -->
+                                <div class="content text-dark display-2 secondary-title mt-3">
+                                    
+                                    <p>
+                                        A medida que los servicios de IA y los datos que consumen y crean se vuelven más importantes y prevalentes en diversas aplicaciones y procesos, también lo hacen las plataformas y arquitecturas sobre las que se basan. Como es habitual, no existe una “talla única”, sin embargo, lo que se presenta brevemente aquí es un enfoque optimizado para este tipo de arquitecturas de aplicaciones de IA basadas en datos.
+                                    </p>
+                                    <p> 
+                                        Todo el código fuente mencionado y más se puede encontrar aquí , y un taller gratuito "Desarrollo con Oracle AI y servicios de bases de datos: generación, visión, voz, lenguaje y OML" (donde todos los casos de uso se basan en los 17 de la ONU). Objetivos de Desarrollo Sostenible) que ofrecen muchos más ejemplos, se pueden encontrar  <b>aquí</b>.
+                                    </p>
+                                    <p>
+                                        <b>
+                                            Cuando las llamadas se realizan desde la propia base de datos, se proporciona una arquitectura optimizada con varios beneficios que incluyen:
+                                        </b>
+                                    </p>
+                                    <ol id="ol-sidebar">
+                                        <li>
+                                            Reducción de llamadas de red, reduciendo así la latencia.
+                                        </li>
+                                        <li>
+                                            Reducción de llamadas de red, aumentando así la confiabilidad.
+                                        </li>
+                                        <li>
+                                            Operaciones transaccionales (ACID) sobre IA y otros datos (e incluso mensajes cuando se usa TxEventQ) que evitan la necesidad de una lógica de procesamiento idempotente/duplicada, etc., y los recursos relacionados desperdiciados allí.
+                                        </li>
+                                        <li>
+                                            La optimización del procesamiento se debe a la localidad de los datos, ya sea que esos datos se almacenen directamente en la base de datos o en un almacén de objetos u otra fuente. Esto se debe a que la base de datos Oracle proporciona una interfaz funcional sólida para depósitos de almacenamiento de objetos que de otro modo serían tontos, y la base de datos proporciona muchas opciones para sincronizar u operar de manera óptima los datos existentes en el almacén de objetos y otras fuentes de datos.
+                                        </li>
+                                        <li>
+                                            Seguridad mejorada gracias a un mecanismo de autenticación común y la reutilización de una base de datos y una infraestructura de seguridad en la nube famosamente robustas.
+                                        </li>
+                                        <li>
+                                            Configuración general reducida ya que las llamadas se realizan desde una ubicación central. El punto de entrada a la base de datos se puede exponer como un punto final Rest (usando ORDS) con un solo clic y, por supuesto, también se pueden usar controladores en varios idiomas para acceder a la base de datos.
+                                        </li>
+                                        <li>
+                                            Ventajas de las bases de datos vectoriales. Este tema es un blog en sí mismo y lo publicaré a continuación, especialmente porque Oracle ha agregado y está agregando varias características poderosas en esta área.
+                                        </li>
+                                        <li>
+                                            Aprendizaje automático de bases de datos Oracle. Además de varios servicios de IA, la propia base de datos Oracle cuenta desde hace muchos años con un motor de aprendizaje automático. OML agiliza el ciclo de vida de ML, ofreciendo SQL escalable, R, Python, REST, AutoML y herramientas sin código con más de 30 algoritmos en la base de datos, mejorando la sincronización y la seguridad de los datos al procesarlos directamente en la base de datos.
+                                        </li>
+                                        <li>
+                                            Base de datos autónoma de Oracle. Seleccione IA, que permite consultar datos utilizando lenguaje natural y generar SQL específico para su base de datos.
+                                        </li>
+                                        <li>
+                                            Base de datos autónoma de Oracle. AI Vector Search, que incluye un nuevo tipo de datos vectoriales, índices vectoriales y operadores SQL de búsqueda vectorial, permite que Oracle Database almacene el contenido semántico de documentos, imágenes y otros datos no estructurados como vectores, y los utilice para ejecutar consultas rápidas de similitud.
+                                        </li>
+                                    </ol>
+                                    
+                                    <p>
+                                        <b>
+                                            Nuevamente, existen muchos flujos y requisitos de aplicaciones de IA diferentes, pero se puede visualizar una comparación básica de los dos enfoques de la siguiente manera:
+                                        </b>
+                                    </p>
 
-                            <div class="title">
-                                <h2 class="text-title text-dark display-1">How to Develop Data-Driven AI Apps: A Guide to Making AI Services Directly From the Database</h2>
-                                
-                            </div>
+                                    
+                                    <h3>
+                                        En Conclusión...
+                                   </h3>
+                                    <p>
+                                        Este fue un blog rápido que muestra un patrón arquitectónico para desarrollar aplicaciones de IA basadas en datos realizando llamadas a servicios de IA directamente desde la base de datos.
+                                    </p>
+                                   <p>
+                                    Muchas gracias por leer y cualquier pregunta o comentario que pueda tener, hágamelo saber.
+                                   </p>
+                                    
+                                    
+                                    
+                                </div>
 
-                            <div class="meta">
-                                <a href="#" class="link display-2 text-secondary px-1">
-                                    <i class="fas fa-user text-primary"></i> Paul Parkinson
-                                </a>
-                                <a href="#" class="link display-2 text-secondary px-1">
-                                    <i class="fas fa-clock text-primary"></i>  JAN 08. 2024
-                                </a>
-                                <a href="#" class="link display-2 text-secondary px-1">
-                                    <i class="fas fa-comments text-primary"></i> 12
-                                </a>
-                            </div>
 
-                        </div>
-
-                        <!-- thumbnail  -->
-                        <div class="thumbnail mt-3">
-                            <img src="../assets/blogImgAi.png" class="thumbnail" alt="">
-                        </div>
-
-                        <!-- content -->
-                        <div class="content text-dark display-2 secondary-title mt-3">
-                            <p>
-                                A medida que los servicios de IA y los datos que consumen y crean se vuelven más importantes y prevalentes en diversas aplicaciones y procesos, también lo hacen las plataformas y arquitecturas sobre las que se basan. Como es habitual, no existe una “talla única”, sin embargo, lo que se presenta brevemente aquí es un enfoque optimizado para este tipo de arquitecturas de aplicaciones de IA basadas en datos.
-                            </p>
-                            <p> 
-                                Todo el código fuente mencionado y más se puede encontrar aquí , y un taller gratuito "Desarrollo con Oracle AI y servicios de bases de datos: generación, visión, voz, lenguaje y OML" (donde todos los casos de uso se basan en los 17 de la ONU). Objetivos de Desarrollo Sostenible) que ofrecen muchos más ejemplos, se pueden encontrar  <b>aquí</b>.
-                            </p>
-                            <p>
-                                <b>
-                                    Cuando las llamadas se realizan desde la propia base de datos, se proporciona una arquitectura optimizada con varios beneficios que incluyen:
-                                </b>
-                            </p>
-                            <ol id="ol-sidebar">
-                                <li>
-                                    Reducción de llamadas de red, reduciendo así la latencia.
-                                </li>
-                                <li>
-                                    Reducción de llamadas de red, aumentando así la confiabilidad.
-                                </li>
-                                <li>
-                                    Operaciones transaccionales (ACID) sobre IA y otros datos (e incluso mensajes cuando se usa TxEventQ) que evitan la necesidad de una lógica de procesamiento idempotente/duplicada, etc., y los recursos relacionados desperdiciados allí.
-                                </li>
-                                <li>
-                                    La optimización del procesamiento se debe a la localidad de los datos, ya sea que esos datos se almacenen directamente en la base de datos o en un almacén de objetos u otra fuente. Esto se debe a que la base de datos Oracle proporciona una interfaz funcional sólida para depósitos de almacenamiento de objetos que de otro modo serían tontos, y la base de datos proporciona muchas opciones para sincronizar u operar de manera óptima los datos existentes en el almacén de objetos y otras fuentes de datos.
-                                </li>
-                                <li>
-                                    Seguridad mejorada gracias a un mecanismo de autenticación común y la reutilización de una base de datos y una infraestructura de seguridad en la nube famosamente robustas.
-                                </li>
-                                <li>
-                                    Configuración general reducida ya que las llamadas se realizan desde una ubicación central. El punto de entrada a la base de datos se puede exponer como un punto final Rest (usando ORDS) con un solo clic y, por supuesto, también se pueden usar controladores en varios idiomas para acceder a la base de datos.
-                                </li>
-                                <li>
-                                    Ventajas de las bases de datos vectoriales. Este tema es un blog en sí mismo y lo publicaré a continuación, especialmente porque Oracle ha agregado y está agregando varias características poderosas en esta área.
-                                </li>
-                                <li>
-                                    Aprendizaje automático de bases de datos Oracle. Además de varios servicios de IA, la propia base de datos Oracle cuenta desde hace muchos años con un motor de aprendizaje automático. OML agiliza el ciclo de vida de ML, ofreciendo SQL escalable, R, Python, REST, AutoML y herramientas sin código con más de 30 algoritmos en la base de datos, mejorando la sincronización y la seguridad de los datos al procesarlos directamente en la base de datos.
-                                </li>
-                                <li>
-                                    Base de datos autónoma de Oracle. Seleccione IA, que permite consultar datos utilizando lenguaje natural y generar SQL específico para su base de datos.
-                                </li>
-                                <li>
-                                    Base de datos autónoma de Oracle. AI Vector Search, que incluye un nuevo tipo de datos vectoriales, índices vectoriales y operadores SQL de búsqueda vectorial, permite que Oracle Database almacene el contenido semántico de documentos, imágenes y otros datos no estructurados como vectores, y los utilice para ejecutar consultas rápidas de similitud.
-                                </li>
-                            </ol>
-                            <p>
-                                These new capabilities also support RAG (Retrieval Augmented Generation) which provides higher accuracy and avoids having to expose private data by including it in the LLM training data.
-                            </p>
-                            <p>
-                                <b>
-                                    Nuevamente, existen muchos flujos y requisitos de aplicaciones de IA diferentes, pero se puede visualizar una comparación básica de los dos enfoques de la siguiente manera:
-                                </b>
-                            </p>
-
-                            <div class="img-container">
-                                <img src="../assets/blogAiContentImg.jpeg" alt="AI Image">
-                            </div>
-                        </div>
-                        <h3>
-                            En Conclusión...
-                       </h3>
-                        <p>
-                            Este fue un blog rápido que muestra un patrón arquitectónico para desarrollar aplicaciones de IA basadas en datos realizando llamadas a servicios de IA directamente desde la base de datos.
-                        </p>
-                       <p>
-                        Muchas gracias por leer y cualquier pregunta o comentario que pueda tener, hágamelo saber.
-                       </p>
-                    </article>
-
-                    <!-- post footer -->
+                            </article>
+        
+                            <!-- post footer -->
+                             <!-- post footer -->
                     <div class="post-footer mb-3">
                         <div class="post-tags d-flex flex-wrap justify-content-center">
-                            <a href="#" class="nav-link btn bg-light">Tecnologia</a>
-                            <a href="#" class="nav-link btn bg-light">A.I</a>
-                            <a href="#" class="nav-link btn bg-light">Machine Learning</a>
-                            <a href="#" class="nav-link btn bg-light">Ciberseguridad</a>
-                            <a href="#" class="nav-link btn bg-light">Bases de datos</a>
+                            <a href="#" class="nav-link btn bg-light">Robótica</a>
+                            <a href="#" class="nav-link btn bg-light">I.A</a>
+                            <a href="#" class="nav-link btn bg-light">Finanzas</a>
                         </div>
 
                         <div class="post-author text-center">
@@ -188,11 +186,11 @@
                                 <img src="../assets/face/face1.jpg" class="rounded" alt="">
                             </div>
 
-                            <div class="author-info py-2">
-                                <h3 class="text-dark">Paul Parkinson</h3>
+                            <div class="author-info py-2 mb-3">
+                                <h3 class="text-dark">Carlos Pérez</h3>
 
                                 <p class="text-secondary secondary-title">
-                                    Architect and Developer Advocate, Microservices with Oracle Database. XR
+                                    Escritor y programador. Previo CFO en Robot S.A.
                                 </p>
 
                                 <div class="post-tags d-flex flex-wrap justify-content-center">
@@ -202,235 +200,507 @@
                                     <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
                                 </div>
                             </div>
+
                         </div>
 
-                        <!-- post related -->
-                        <div class="prev-next-container">
-                            <div class="left-div">
-                                <div class="py-2">
-                                    <a href="#" class="display-2 text-dark">
-                                        <i class="fas fa-chevron-left"></i> 
-                                        Anterior
-                                    </a>
-                                    <div class="text-title display-2 text-dark mt-2">
-                                        DevOps inteligente: 8 lecciones aprendidas de la naturaleza
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-div">
-                                <div class="py-2">
-                                    <a href="#" class="display-2 text-dark">
-                                        Siguiente 
-                                        <i class="fas fa-chevron-right"></i> 
-                                    </a>
-                                    <div class="text-title display-2 text-dark px-2 mt-2">
-                                        Las 24 redes sociales más importantes de la tecnología para la distribución de contenidos
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
+                        
 
-                        <div class="post-comments py-2">
-                            <h3 class="text-center display-1 secondary-title py-2">5 Comments</h3>
-    
-                            <div class="comment-details">
-                                <div class="comment-item py-2">
-                                    <div class="d-flex">
-                                        <div class="avatar px-2">
-                                            <img src="../assets/face/face1.jpg" class="rounded" alt="">
-                                        </div>
-                                        <div class="comment-content">
-                                            <h5 class="display-2 m-0">User 1 </h5>
-                                            <p class="title-secondary text-dark">
-                                                Pedazo articulo chaval! 
-                                            </p>
-                                        </div>
-                                    </div>
-                                     <!-- comment reply -->
-                                     <div class="reply py-2">
-                                        <div class="d-flex">
-                                            <div class="avatar px-2">
-                                                <img src="../assets/face/face2.jpg" class="rounded" alt="">
+                    </div>
+                    <!-- .post footer -->
+                            <!-- .post footer -->
+                        </div>
+                        <div class="col-4">
+                            <aside id="sidebar" class="px-1">
+
+                                <!-- categories -->
+                                <section class="categories">
+                                    <h2 class="text-center text-dark">Categories</h2>
+
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>Tecnologia</span>
+                                        <span>12</span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>AI</span>
+                                        <span>8</span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>Finanzas</span>
+                                        <span>5</span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>Gaming</span>
+                                        <span>3</span>
+                                    </a>
+                                </section>
+
+                                <!-- Trending post -->
+                                <section class="trending-post mt-3">
+
+                                    <h2 class="text-center text-dark py-2">Recomendados</h2>
+
+                                    <!-- post-items -->
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="/templates/article.html">
+                                                    <img src="../assets/openai.webp" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="/templates/article.html" class="link text-primary">
+                                                            Inteligencia Artificial
+                                                        </a>
+                                                    </div>
+                                                    <a href="/templates/article.html" class="text-title display-2 text-dark">
+                                                        Cómo desarrollar aplicaciones de IA basadas en datos         </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                            JAN 10. 2024
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
                                             </div>
-                                            <div class="comment-content">
-                                                <h5 class="display-2 m-0">User 2 reply</h5>
-                                                <p class="title-secondary text-dark">
-                                                    Articulo muy bien escrito. Estoy totalmente en contra por eso.
-                                                </p>
+                                        </article>
+                                    </div>
+
+                                       <!-- post-items -->
+                                       <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="/templates/article2.html">
+                                                    <img src="../assets/ai2.webp" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="/templates/article2.html" class="link text-primary">
+                                                            Inteligencia Artificial
+                                                        </a>
+                                                    </div>
+                                                    <a href="/templates/article2.html" class="text-title display-2 text-dark">
+                                                        Cómo afectará la IA a las campañas políticas en un futuro próximo: todo comenzó con Hal-9000
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             JAN 8. 2024
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
                                             </div>
+                                        </article>
                                         </div>
+                                        <div class="post-item py-1">
+                                            <article class="article">
+                                                <div class="d-flex">
+                                                    <a href="/templates/article3.html">
+                                                        <img src="../assets/wifi-logo.webp" class="rounded px-1" alt="">
+                                                    </a>
+                                                    <div class="cart-body">
+                                                        <div class="trending-category">
+                                                            <a href="/templates/article3.html" class="link text-primary">
+                                                                MOBIL
+                                                            </a>
+                                                        </div>
+                                                        <a href="/templates/article3.html" class="text-title display-2 text-dark">
+                                                            Las 24 redes sociales más importantes de la tecnología para la distribución de contenidos
+                                                        </a>
+                                                        <p class="secondary-title text-secondary display-3">
+                                                            <span>
+                                                                <i class="far fa-clock text-primary"></i>
+                                                                 JAN 2. 2024
+                                                            </span>
+                                                        </p>                                                    
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            </div>
+                                            <div class="post-item py-1">
+                                                <article class="article">
+                                                    <div class="d-flex">
+                                                        <a href="/templates/article4.html">
+                                                            <img src="../assets/logo_blog_tech.jpeg" class="rounded px-1" alt="">
+                                                        </a>
+                                                        <div class="cart-body">
+                                                            <div class="trending-category">
+                                                                <a href="/templates/article4.html" class="link text-primary">
+                                                                    MOBIL
+                                                                </a>
+                                                            </div>
+                                                            <a href="/templates/article4.html" class="text-title display-2 text-dark">
+                                                                La vida después de los Smartphones: ¿La caída en ventas de Apple. están perdiendo la visión?
+                                                            </a>
+                                                            <p class="secondary-title text-secondary display-3">
+                                                                <span>
+                                                                    <i class="far fa-clock text-primary"></i>
+                                                                     JAN 8. 2024
+                                                                </span>
+                                                            </p>                                                    
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                </div>
+                                                
+                                                    <div class="post-item py-1">
+                                                        <article class="article">
+                                                            <div class="d-flex">
+                                                                <a href="/templates/article5.html">
+                                                                    <img src="../assets/crypto.png" class="rounded px-1" alt="">
+                                                                </a>
+                                                                <div class="cart-body">
+                                                                    <div class="trending-category">
+                                                                        <a href="/templates/article5.html" class="link text-primary">
+                                                                            web3
+                                                                        </a>
+                                                                    </div>
+                                                                    <a href="/templates/article5.html" class="text-title display-2 text-dark">
+                                                                        2024 podría ser el año que buscan los entusiastas de las criptomonedas
+                                                                    </a>
+                                                                    <p class="secondary-title text-secondary display-3">
+                                                                        <span>
+                                                                            <i class="far fa-clock text-primary"></i>
+                                                                             JAN 8. 2024
+                                                                        </span>
+                                                                    
+                                                                    </p>                                                    
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        </div>
+                                                        <div class="post-item py-1">
+                                                            <article class="article">
+                                                                <div class="d-flex">
+                                                                    <a href="/templates/article6.html">
+                                                                       
+                                                                        <img src="../assets/socialmedia.jpg" class="rounded px-1" alt="">
+                                                                    </a>
+                                                                    <div class="cart-body">
+                                                                        <div class="trending-category">
+                                                                            <a href="/templates/article6.html" class="link text-primary">
+                                                                                ROBOTICA
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href="/templates/article6.html" class="text-title display-2 text-dark">
+                                                                            Crean el robot humanoide más avanzado del mundo inspirado en una persona
+                                                                        </a>
+                                                                        <p class="secondary-title text-secondary display-3">
+                                                                            <span>
+                                                                                <i class="far fa-clock text-primary"></i>
+                                                                                DEC 18. 2023
+                                                                            </span>
+                                                                        </p>                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                            </div>
+                                                        <div class="post-item py-1">
+                                                            <article class="article">
+                                                                <div class="d-flex">
+                                                                    <a href="/templates/article7.html">
+                                                                        <img src="../assets/ai.webp" class="rounded px-1" alt="">
+                                                                    </a>
+                                                                    <div class="cart-body">
+                                                                        <div class="trending-category">
+                                                                            <a href="/templates/article7.html" class="link text-primary">
+                                                                                SISTEMAS
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href="/templates/article7.html" class="text-title display-2 text-dark">
+                                                                            DevOps inteligente: 8 lecciones aprendidas de la naturaleza
+                                                                        </a>
+                                                                        <p class="secondary-title text-secondary display-3">
+                                                                            <span>
+                                                                                <i class="far fa-clock text-primary"></i>
+                                                                                 DEC 18. 2023
+                                                                            </span>
+                                                                        </p>                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                            </div>
+
+                                           <!-- post-items -->
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="/templates/article8.html">
+                                                    <img src="../assets/comuicationImg.webp" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="/templates/article8.html" class="link text-primary">
+                                                            MOBIL
+                                                        </a>
+                                                    </div>
+                                                    <a href="/templates/article8.html" class="text-title display-2 text-dark">
+                                                        Scraping de contenido: un robo imperdonable de creatividad
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                            JAN 10. 2024
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
                                     </div>
-    
-                                </div>
-                                <div class="comment-item py-2">
-                                    <div class="d-flex">
-                                        <div class="avatar px-2">
-                                            <img src="../assets/face/face3.jpg" class="rounded" alt="">
-                                        </div>
-                                        <div class="comment-content">
-                                            <h5 class="display-2 m-0">User 3 </h5>
-                                            <p class="title-secondary text-dark">
-                                                Comentario Comentario Comentario Comentario Comentario
-                                            </p>
-    
-                                        </div>
+
+                                       <!-- post-items -->
+                                       <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="/templates/article9.html">
+                                                    <img src="../assets/logo_blog_tech.jpeg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="/templates/article9.html" class="link text-primary">
+                                                            CIBERSEGURIDAD
+                                                        </a>
+                                                    </div>
+                                                    <a href="/templates/article9.html" class="text-title display-2 text-dark">
+                                                        Los niños deberían empezar a aprender ciberseguridad   </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             JAN 09. 2024
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
                                     </div>
-                                </div>
+
+                                </section>
+
+                            </aside>
+                        </div>
+                    </div>
+
+
+                </section>
+            <!-- .Post Content -->
+
+            <div class="prev-next-container ">
+                <div class="left-div">
+                    <div class="py-2">
+                        <a href="#" class="display-2 text-dark">
+                            <i class="fas fa-chevron-left"></i> 
+                            Anterior
+                        </a>
+                        <div class="text-title display-2 text-dark mt-2">
+                            DevOps inteligente: 8 lecciones aprendidas de la naturaleza
+                        </div>
+                    </div>
+                </div>
+                <div class="right-div">
+                    <div class="py-2">
+                        <a href="#" class="display-2 text-dark">
+                            Siguiente 
+                            <i class="fas fa-chevron-right"></i> 
+                        </a>
+                        <div class="text-title display-2 text-dark px-2 mt-2">
+                            Las 24 redes sociales más importantes de la tecnología para la distribución de contenidos
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            
+
+            <div class="post-comments py-2">
+                <h3 class="text-center display-1 secondary-title py-2">5 Comentarios</h3>
+
+                <div class="comment-details">
+                    <div class="comment-item py-2">
+                        <div class="d-flex">
+                            <div class="avatar px-2">
+                                <img src="../assets/face/face1.jpg" class="rounded" alt="">
                             </div>
-    
-                            <h3 class="text-center display-1 secondary-title py-2">Leave Comment</h3>
-    
-                            <div class="comment-form">
-                                <div class="d-flex justify-content-between flex-wrap">
-                                    <input type="text" class="form-control " placeholder="Name">
-                                    <input type="email" class="form-control" placeholder="Email">
-                                    <input type="text" class="form-control" placeholder="Website">
+                            <div class="comment-content">
+                                <h5 class="display-2 m-0">User 1 </h5>
+                                <p class="title-secondary text-dark">
+                                    Pedazo articulo chaval! 
+                                </p>
+                            </div>
+                        </div>
+                         <!-- comment reply -->
+                         <div class="reply py-2">
+                            <div class="d-flex">
+                                <div class="avatar px-2">
+                                    <img src="../assets/face/face2.jpg" class="rounded" alt="">
                                 </div>
-                                <textarea class="form-control mt-3" placeholder="Message" rows="10"></textarea>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary display-2 text-light mt-2">Submit</button>
+                                <div class="comment-content">
+                                    <h5 class="display-2 m-0">User 2 reply</h5>
+                                    <p class="title-secondary text-dark">
+                                        Articulo muy bien escrito. Estoy totalmente en contra por eso.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <!-- .post footer -->
+                    <div class="comment-item py-2">
+                        <div class="d-flex">
+                            <div class="avatar px-2">
+                                <img src="../assets/face/face3.jpg" class="rounded" alt="">
+                            </div>
+                            <div class="comment-content">
+                                <h5 class="display-2 m-0">User 3 </h5>
+                                <p class="title-secondary text-dark">
+                                    Comentario Comentario Comentario Comentario Comentario
+                                </p>
 
-                </section>
-            <!-- .Post Content -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Swiper slider -->
-                
-             <!-- .Swiper slider -->
+
+                <h3 class="text-center display-1 secondary-title mt-3">Deja tu comentario!</h3>
+
+                <div class="comment-form px-2 py-3">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <input type="text" class="form-control mb-3" placeholder="Nombre...">
+                        <input type="email" class="form-control mb-3" placeholder="Email...">
+                    </div>
+                    <textarea class="form-control" placeholder="Mensaje..." rows="5"></textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary display-2 text-light mt-2">Submit</button>
+                    </div>
+                </div>
+            </div>
 
        </main>
     <!-- .Main Site -->
 
-    <!-- footer -->
-       <footer id="footer">
-           <div class="container">
-               <div class="row mb-3">
-                   <div class="col-3">
-                       <h2 class="footer-title secondary-title text-center">Sobre nosotros</h2>
+   <!-- footer -->
+   <footer id="footer">
+    <div class="container">
+        <div class="row mb-3">
+            <div class="col-3">
+                <h2 class="footer-title secondary-title text-center">Sobre nosotros</h2>
 
-                       <div class="secondary-title text-dark">
-                            <p class="mt-2 ">
-                                Las notícias del sector de las nuevas tecnologías, telecomunicaciones, informática y emprendedores las encontarás aquí
-                            </p>
-                            
-                            <div class="phone">
-                                <i class="fas fa-mobile text-primary"></i> 
-                                (+34) 900 681 433
-                            </div>
+                <div class="secondary-title text-dark">
+                     <p class="mt-2 ">
+                         Las notícias del sector de las nuevas tecnologías, telecomunicaciones, informática y emprendedores las encontarás aquí
+                     </p>
+                     
+                     <div class="phone">
+                         <i class="fas fa-mobile text-primary"></i> 
+                         (+34) 900 681 433
+                     </div>
 
-                            <div class="email">
-                                <i class="fas fa-envelope text-primary"></i> 
-                                tecnonews@gmail.com
-                            </div>
+                     <div class="email">
+                         <i class="fas fa-envelope text-primary"></i> 
+                         tecnonews@gmail.com
+                     </div>
 
-                       </div>
+                </div>
 
-                       <h2 class="footer-title secondary-title">Social</h2>
+                <h2 class="footer-title secondary-title">Social</h2>
 
-                       <div class="tags social">
-                           <div class="d-flex flex-wrap">
-                               <a href="#" class="nav-link btn bg-light"><i class="fab fa-facebook-f"></i></a>
-                               <a href="#" class="nav-link btn bg-light"><i class="fab fa-twitter"></i></a>
-                               <a href="#" class="nav-link btn bg-light"><i class="fab fa-instagram"></i></a>
-                               <a href="#" class="nav-link btn bg-light"><i class="fab fa-dribbble"></i></a>
-                           </div>
-                       </div>
+                <div class="tags social">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="nav-link btn bg-light"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="nav-link btn bg-light"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="nav-link btn bg-light"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="nav-link btn bg-light"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
 
-                   </div>
-                   <div class="col-3">
-                       <h2 class="footer-title secondary-title text-center">Recomendados</h2>
+            </div>
+            <div class="col-3">
+                <h2 class="footer-title secondary-title text-center">Recomendados</h2>
 
-                       <div class="feature-post">
-                           <div class="flex-item">
-                               <article class="article">
-                                   <div class="d-flex">
-                                       <a href="/templates/article5.html">
-                                           <img src="../assets/crypto.png" class="object-fit px-1" alt="">
-                                           <div class="px-1">
-                                               <a href="/templates/article5.html" class="text-title display-2 text-dark">
-                                                2024 podría ser el año que buscan los entusiastas de las criptos
-                                               </a>
-                                               <p class="secondary-title text-dark display-3">
-                                                    <span><i class="far fa-clock text-primary"></i> JAN 10. 2024 </span>
-                                               </p>
-                                           </div>
-                                       </a>
-                                   </div>
-                               </article>
-                           </div>
-                           <div class="flex-item">
-                            <article class="article">
-                                <div class="d-flex">
-                                    <a href="/templates/article7.html">
-                                        <img src="../assets/devops.webp" class="object-fit px-1" alt="">
-                                        <div class="px-1">
-                                            <a href="/templates/article7.html" class="text-title display-2 text-dark">
-                                                DevOps inteligente: 8 lecciones aprendidas de la naturaleza
-                                            </a>
-                                            <p class="secondary-title text-dark display-3">
-                                                 <span><i class="far fa-clock text-primary"></i>JAN 2. 2024</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </article>
-                             </div>
-                             <div class="flex-item">
-                                <article class="article">
-                                    <div class="d-flex">
-                                        <a href="/templates/article8.html">
-                                            <img src="../assets/webscraping.jpg" class="object-fit px-1" alt="">
-                                            <div class="px-1">
-                                                <a href="/templates/article8.html" class="text-title display-2 text-dark">
-                                                    Scraping de contenido: un robo imperdonable de creatividad
-                                                </a>
-                                                <p class="secondary-title text-dark display-3">
-                                                     <span><i class="far fa-clock text-primary"></i> DEC 19. 2023 </span>
-                                                </p>
-                                            </div>
+                <div class="feature-post">
+                    <div class="flex-item">
+                        <article class="article">
+                            <div class="d-flex">
+                                <a href="/templates/article5.html">
+                                    <img src="../assets/crypto.png" class="object-fit px-1" alt="">
+                                    <div class="px-1">
+                                        <a href="/templates/article5.html" class="text-title display-2 text-dark">
+                                         2024 podría ser el año que buscan los entusiastas de las criptos
                                         </a>
+                                        <p class="secondary-title text-dark display-3">
+                                             <span><i class="far fa-clock text-primary"></i> JAN 10. 2024 </span>
+                                        </p>
                                     </div>
-                                </article>
+                                </a>
                             </div>
-                       </div>
-                   </div>
-                   <div class="col-3">
-                        <h2 class="footer-title secondary-title text-center">Categorias</h2>
+                        </article>
+                    </div>
+                    <div class="flex-item">
+                     <article class="article">
+                         <div class="d-flex">
+                             <a href="/templates/article7.html">
+                                 <img src="../assets/devops.webp" class="object-fit px-1" alt="">
+                                 <div class="px-1">
+                                     <a href="/templates/article7.html" class="text-title display-2 text-dark">
+                                         DevOps inteligente: 8 lecciones aprendidas de la naturaleza
+                                     </a>
+                                     <p class="secondary-title text-dark display-3">
+                                          <span><i class="far fa-clock text-primary"></i> JAN 2. 2024</span>
+                                     </p>
+                                 </div>
+                             </a>
+                         </div>
+                     </article>
+                      </div>
+                      <div class="flex-item">
+                         <article class="article">
+                             <div class="d-flex">
+                                 <a href="/templates/article8.html">
+                                     <img src="../assets/webscraping.jpg" class="object-fit px-1" alt="">
+                                     <div class="px-1">
+                                         <a href="/templates/article8.html" class="text-title display-2 text-dark">
+                                             Scraping de contenido: un robo imperdonable de creatividad
+                                         </a>
+                                         <p class="secondary-title text-dark display-3">
+                                              <span><i class="far fa-clock text-primary"></i> DEC 19. 2023 </span>
+                                         </p>
+                                     </div>
+                                 </a>
+                             </div>
+                         </article>
+                     </div>
+                </div>
+            </div>
+            <div class="col-3">
+                 <h2 class="footer-title secondary-title text-center">Categorias</h2>
 
-                        <div class="tags">
-                            <div class="d-flex flex-wrap justify-content-center">
-                                <a href="#" class="nav-link btn bg-light">SISTEMAS</a>
-                                <a href="#" class="nav-link btn bg-light">PROGRAMACION</a>
-                                <a href="#" class="nav-link btn bg-light">MOBIL</a>
-                                <a href="#" class="nav-link btn bg-light">I.A</a>
-                                <a href="#" class="nav-link btn bg-light">WEB3</a>
-                                <a href="#" class="nav-link btn bg-light">DATA-SCIENCE</a>
-                                <a href="#" class="nav-link btn bg-light">GAMING</a>
-                                <a href="#" class="nav-link btn bg-light">FINANZAS</a>
-                                <a href="#" class="nav-link btn bg-light">CIBERSEGURIDAD</a>
+                 <div class="tags">
+                     <div class="d-flex flex-wrap justify-content-center">
+                         <a href="#" class="nav-link btn bg-light">SISTEMAS</a>
+                         <a href="#" class="nav-link btn bg-light">PROGRAMACION</a>
+                         <a href="#" class="nav-link btn bg-light">MOBIL</a>
+                         <a href="#" class="nav-link btn bg-light">I.A</a>
+                         <a href="#" class="nav-link btn bg-light">WEB3</a>
+                         <a href="#" class="nav-link btn bg-light">DATA-SCIENCE</a>
+                         <a href="#" class="nav-link btn bg-light">GAMING</a>
+                         <a href="#" class="nav-link btn bg-light">FINANZAS</a>
+                         <a href="#" class="nav-link btn bg-light">CIBERSEGURIDAD</a>
 
-                            </div>
-                        </div>
+                     </div>
+                 </div>
 
-                       
+                
 
-                   </div>
-               </div>
+            </div>
+        </div>
 
-               <!-- copyrights  -->
-               <div class="copyrights">
-                   <p class="text-center text-dark display-2">
-                        © 2021 <a href="#" class="text-primary">Dailytuition</a> - Personal Blog Theme. All rights reserved.
-                   </p>
-               </div>
-           </div>
-       </footer>
-    <!-- .footer -->
+        <!-- copyrights  -->
+        <div class="copyrights">
+            <p class="text-center text-dark display-2">
+                 © 2024 <a href="#" class="text-primary">Tecno News</a> -  Blog tecnológico. Todos los derechos reservados.
+            </p>
+        </div>
+    </div>
+</footer>
+<!-- .footer -->
 
 
     <!-- masonry libray for horizontal grid -->
@@ -440,8 +710,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
 
     <!-- custom javascript main.js file -->
-    <script src="/static/article/main.js"></script>
+    <script src="../static/sidebar/main.js"></script>
 </body>
 </html>
-
 
