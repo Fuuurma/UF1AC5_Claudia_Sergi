@@ -475,6 +475,7 @@ a{
     width: 75%;
     align-items: center;
     margin: auto;
+    margin-top: 5%;
 }
 
 .left-div,
@@ -526,7 +527,12 @@ a{
 }
 
 
-
+.display-3 span {
+    border: 1px solid var(--secondary);
+    border-radius: 12px;
+    padding: 8px;
+    background-color: var(--light);
+}
 
 /* ----------- .sidebar page ------- */
 
