@@ -1,10 +1,25 @@
 // main.scss
 
+/*
+    La logica y estilos esta en cada uno de los archivos que se importan. 
+    Se limpia y compartimenta los estilos.
+*/
 @import 'variables';
 @import 'base';
 @import 'typo';
 @import 'buttons';
 @import 'utils';
 @import 'images';
+@import 'navigation';
+@import 'footer';
+@import 'sidebar';
+@import 'home';
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
 
 

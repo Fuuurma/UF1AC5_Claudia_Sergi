@@ -54,4 +54,19 @@ body {
   .secondary-title {
     font-family: 'Poppins', sans-serif;
   }
+
+  .flex-wrap{
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .tags{
+    display: flex;
+  }
+  .d-flex{
+    display: flex;
+  }
+
+  .d-flex span {
+    display: flex;
+  }
   

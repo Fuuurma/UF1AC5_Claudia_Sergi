@@ -1,0 +1,22 @@
+/* ----------- Footer ---------- */
+#footer {
+    padding-top: 4em;
+    background: linear-gradient(to right, #B5FFFC, #FFDEE9);
+    border-top: 2px solid var(--dark);
+    margin-top: 40px;
+  }
+  
+  #footer .feature-post .flex-item {
+    margin-bottom: 10px;
+  }
+  
+  #footer .tags a {
+    border-radius: 40px;
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  
+  #footer .copyrights {
+    padding: 10px 0;
+    border-top: 2px solid var(--light);
+  }

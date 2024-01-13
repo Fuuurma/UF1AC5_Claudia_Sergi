@@ -1,3 +1,7 @@
+/*
+    La logica y estilos esta en cada uno de los archivos que se importan. 
+    Se limpia y compartimenta los estilos.
+*/
 :root {
   --light: #f8f9fa;
   --secondary: #adb5bd;
@@ -129,6 +133,23 @@ a {
   font-family: "Poppins", sans-serif;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tags {
+  display: flex;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex span {
+  display: flex;
+}
+
 .display-1 {
   font-size: 22px;
 }
@@ -241,4 +262,329 @@ a {
 
 .shadow {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+#header {
+  background: linear-gradient(to right, #B5FFFC, #FFDEE9);
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  border-bottom: 2px solid var(--dark);
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.nav-brand {
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  align-self: center;
+  font-size: 32px;
+}
+
+.collapse {
+  align-self: center;
+}
+
+.nav-link {
+  font-size: 18px;
+  margin: 12px;
+  color: var(--dark);
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+.search-box {
+  display: inline;
+  border-right: 1px solid var(--secondary);
+  padding-right: 12px;
+  margin-right: 10px;
+}
+
+.toggle-button {
+  font-size: 21px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  margin: 8px 10px;
+  display: none;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ----------- Footer ---------- */
+#footer {
+  padding-top: 4em;
+  background: linear-gradient(to right, #B5FFFC, #FFDEE9);
+  border-top: 2px solid var(--dark);
+  margin-top: 40px;
+}
+
+#footer .feature-post .flex-item {
+  margin-bottom: 10px;
+}
+
+#footer .tags a {
+  border-radius: 40px;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+
+#footer .copyrights {
+  padding: 10px 0;
+  border-top: 2px solid var(--light);
+}
+
+/* ----------- Article Page ------- */
+#post {
+  padding: 0 2em;
+  margin-bottom: 4em;
+}
+
+.post-footer .post-author {
+  position: relative;
+  margin-top: 4em;
+  background-color: var(--light);
+}
+
+.post-footer .post-author::after {
+  background-color: white;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4em;
+  z-index: 0;
+}
+
+.post-footer .post-author .author-avatar {
+  margin: 0 auto;
+  margin-bottom: 1em;
+  position: inherit;
+  z-index: 1;
+}
+
+.post-footer .post-comments .reply {
+  padding-left: 7em;
+}
+
+.form-control {
+  width: 100%;
+  border: 2px solid var(--border);
+  padding: 1em;
+  font-size: 18px;
+  margin-right: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ----------- Sidebar Page ------- */
+#sidebar .categories a {
+  padding: 1em 3em;
+  font-size: 18px;
+  margin-bottom: 1em;
+  background-color: var(--light);
+  border-radius: 99px;
+}
+
+#sidebar .categories a:hover {
+  background-color: var(--primary-color);
+  color: var(--light);
+}
+
+.img-container {
+  height: 750px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#ol-sidebar li {
+  margin-bottom: 10px;
+}
+
+/* ----------- .Home cards ------- */
+.card-to-blogs {
+  text-decoration: none;
+}
+
+.card-img-container {
+  height: 200px;
+  min-height: 200px;
+  border-bottom: 1px solid var(--dark);
+  contain: content;
+  overflow: hidden;
+  width: 400px;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-content {
+  margin-top: 20px;
+}
+
+.content {
+  padding-left: 10px;
+  border-left: 4px solid transparent;
+  -o-border-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)) 1;
+     border-image: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)) 1;
+}
+
+.prev-next-container {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  align-items: center;
+  margin: auto;
+  margin-top: 5%;
+}
+
+.left-div,
+.right-div {
+  flex: 1;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.left-div {
+  margin-right: 10px;
+  border: 2px solid var(--secondary-color);
+}
+
+.right-div {
+  margin-left: 10px;
+  border: 2px solid var(--primary-color);
+}
+
+.comment-details {
+  margin: auto;
+  padding: 40px 20px;
+  border-radius: 6px;
+  width: 75%;
+  border: 2px solid transparent;
+  -o-border-image: linear-gradient(to right, var(--secondary-color), var(--primary-color)) 1;
+     border-image: linear-gradient(to right, var(--secondary-color), var(--primary-color)) 1;
+  background-color: var(--secondary);
+}
+
+.comment-content {
+  background-color: var(--light);
+  color: var(--dark);
+  border-radius: 25px;
+  padding: 20px;
+}
+
+.avatar img {
+  box-shadow: 0 0 0 4px var(--primary-color), 0 0 0 8px var(--secondary-color);
+}
+
+.comment-form {
+  width: 75%;
+  margin: auto;
+  border: 2px solid transparent;
+  -o-border-image: linear-gradient(to right, var(--secondary-color), var(--primary-color)) 1;
+     border-image: linear-gradient(to right, var(--secondary-color), var(--primary-color)) 1;
+}
+
+.display-3 span {
+  border: 1px solid var(--secondary);
+  border-radius: 12px;
+  padding: 8px;
+  background-color: var(--light);
+}
+
+/* ----------- .Sidebar Page ------- */
+.post-item {
+  border: 2px solid var(--secondary);
+  border-left: 2px solid var(--secondary-color);
+  border-right: 2px solid var(--primary-color);
+  border-radius: 16px;
+  padding: 20px 8px;
+  margin: 18px 10px;
+}
+
+/* ----------- Sticky ------- */
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Media Query */
+.row {
+  display: flex;
+}
+
+.col-3 {
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  padding-right: 35px;
+}
+
+.col-8 {
+  flex: 0 0 70%;
+  max-width: 70%;
+}
+
+.col-4 {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
