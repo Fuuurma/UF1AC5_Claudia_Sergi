@@ -1,0 +1,57 @@
+// _base.scss
+@import 'variables';
+@import 'main_section';
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  * > * {
+    box-sizing: border-box;
+  }
+  
+  .text-light {
+    color: var(--light); 
+  }
+  
+  .text-secondary {
+    color: var(--secondary);
+  }
+  
+  .text-dark {
+    color: var(--dark);
+  }
+  
+  .text-primary {
+    color: var(--primary-color);
+  }
+  
+  .bg-light {
+    background-color: var(--light);
+  }
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+  }
+  
+  .img-fluid {
+    width: 100%;
+  }
+  
+  .text-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+  }
+  
+  .secondary-title {
+    font-family: 'Poppins', sans-serif;
+  }
+  

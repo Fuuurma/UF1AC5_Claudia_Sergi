@@ -1,0 +1,64 @@
+// _main-section.scss
+
+#site-main {
+    margin-top: 6em;
+  }
+  
+  #posts {
+    margin-bottom: 5em;
+  }
+  
+  .grid {
+    margin: 0 auto;
+  }
+  
+  .grid .grid-item {
+    width: calc(33.3333% - 20px);
+    margin-bottom: 3em;
+  }
+  
+  .hero-title {
+    margin-left: 55px;
+    text-decoration: underline;
+  }
+  
+  #main-hero-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 16px;
+    margin: 0px 50px;
+    width: 90%;
+  }
+  
+  .grid-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .grid-item:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .grid-item:nth-child(even):hover {
+    transform: rotate(-3deg) scale(1.1);
+  }
+  
+  .grid-item:nth-child(odd):hover {
+    transform: rotate(3deg) scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    #main-hero-content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #main-hero-content {
+      grid-template-columns: 1fr;
+    }
+  }
+  
