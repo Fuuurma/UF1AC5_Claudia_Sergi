@@ -107,57 +107,46 @@
                         <!-- content -->
                         <div class="content text-dark display-2 secondary-title mt-3">
                             <p>
-                                As AI services and the data they consume and create become more important and prevalent in various applications and processes, 
-                                so do the platforms and architectures they are built upon. As usual, there is no “one size fits all”, however, what is briefly 
-                                presented here is an optimized approach to such data-driven AI application architectures.
+                                A medida que los servicios de IA y los datos que consumen y crean se vuelven más importantes y prevalentes en diversas aplicaciones y procesos, también lo hacen las plataformas y arquitecturas sobre las que se basan. Como es habitual, no existe una “talla única”, sin embargo, lo que se presenta brevemente aquí es un enfoque optimizado para este tipo de arquitecturas de aplicaciones de IA basadas en datos.
                             </p>
                             <p> 
-                                All of the source code mentioned and more can be found here, and a free “Develop with Oracle AI and Database Services: 
-                                Gen, Vision, Speech, Language, and OML” workshop (where all of the use cases are based on the U.N.’s 17 Sustainable Development Goals) 
-                                giving many more examples can be found here.
+                                Todo el código fuente mencionado y más se puede encontrar aquí , y un taller gratuito "Desarrollo con Oracle AI y servicios de bases de datos: generación, visión, voz, lenguaje y OML" (donde todos los casos de uso se basan en los 17 de la ONU). Objetivos de Desarrollo Sostenible) que ofrecen muchos más ejemplos, se pueden encontrar  <b>aquí</b>.
                             </p>
                             <p>
                                 <b>
-                                    When the calls are instead made from the database itself, it provides an optimized architecture with various benefits including:
+                                    Cuando las llamadas se realizan desde la propia base de datos, se proporciona una arquitectura optimizada con varios beneficios que incluyen:
                                 </b>
                             </p>
                             <ol id="ol-sidebar">
                                 <li>
-                                    Reduced network calls, thus reducing latency.
+                                    Reducción de llamadas de red, reduciendo así la latencia.
                                 </li>
                                 <li>
-                                    Reduced network calls, thus, increasing reliability.
+                                    Reducción de llamadas de red, aumentando así la confiabilidad.
                                 </li>
                                 <li>
-                                    Transactional (ACID) operations on AI and other data (and even messaging when using TxEventQ) which avoid the need for 
-                                    idempotent/duplicate processing logic, etc., and the related wasted resources there.
+                                    Operaciones transaccionales (ACID) sobre IA y otros datos (e incluso mensajes cuando se usa TxEventQ) que evitan la necesidad de una lógica de procesamiento idempotente/duplicada, etc., y los recursos relacionados desperdiciados allí.
                                 </li>
                                 <li>
-                                    Processing optimization is due to the locality of data whether that data is stored directly in the database or an object store or other source. 
-                                    This is because the Oracle database provides a robust functional frontend to otherwise dumb object storage buckets, and the database provides 
-                                    many options to either sync or optimally operate on data in place in the object store and other data sources.
+                                    La optimización del procesamiento se debe a la localidad de los datos, ya sea que esos datos se almacenen directamente en la base de datos o en un almacén de objetos u otra fuente. Esto se debe a que la base de datos Oracle proporciona una interfaz funcional sólida para depósitos de almacenamiento de objetos que de otro modo serían tontos, y la base de datos proporciona muchas opciones para sincronizar u operar de manera óptima los datos existentes en el almacén de objetos y otras fuentes de datos.
                                 </li>
                                 <li>
-                                    Enhanced security due to a common authentication mechanism and reuse of a famously robust database and cloud security infrastructure.
+                                    Seguridad mejorada gracias a un mecanismo de autenticación común y la reutilización de una base de datos y una infraestructura de seguridad en la nube famosamente robustas.
                                 </li>
                                 <li>
-                                    Reduced overall configuration as calls are made from a central location. The entry point to the database itself can be exposed as a 
-                                    Rest endpoint (using ORDS) with a single click, and of course, drivers in various languages can be used to access the database as well.
+                                    Configuración general reducida ya que las llamadas se realizan desde una ubicación central. El punto de entrada a la base de datos se puede exponer como un punto final Rest (usando ORDS) con un solo clic y, por supuesto, también se pueden usar controladores en varios idiomas para acceder a la base de datos.
                                 </li>
                                 <li>
-                                    Vector database advantages. This topic is a blog unto itself, and one I’ll release as a follow-on especially as Oracle has and is adding several powerful features in this area.
+                                    Ventajas de las bases de datos vectoriales. Este tema es un blog en sí mismo y lo publicaré a continuación, especialmente porque Oracle ha agregado y está agregando varias características poderosas en esta área.
                                 </li>
                                 <li>
-                                    Oracle Database Machine Learning. In addition to various AI services, the Oracle database itself has had a machine-learning engine for many years. 
-                                    OML streamlines the ML lifecycle, offering scalable SQL, R, Python, REST, AutoML, and no-code tools with over 30 in-database algorithms, 
-                                    enhancing data synchronization and security by processing data directly in the database.
+                                    Aprendizaje automático de bases de datos Oracle. Además de varios servicios de IA, la propia base de datos Oracle cuenta desde hace muchos años con un motor de aprendizaje automático. OML agiliza el ciclo de vida de ML, ofreciendo SQL escalable, R, Python, REST, AutoML y herramientas sin código con más de 30 algoritmos en la base de datos, mejorando la sincronización y la seguridad de los datos al procesarlos directamente en la base de datos.
                                 </li>
                                 <li>
-                                    Oracle Autonomous Database. Select AI which enables querying data using natural language and generating SQL that is specific to your database.
+                                    Base de datos autónoma de Oracle. Seleccione IA, que permite consultar datos utilizando lenguaje natural y generar SQL específico para su base de datos.
                                 </li>
                                 <li>
-                                    Oracle Autonomous Database. AI Vector Search, which includes a new vector data type, vector indexes, and vector search SQL operators, 
-                                    enables the Oracle Database to store the semantic content of documents, images, and other unstructured data as vectors, and use these to run fast similarity queries.
+                                    Base de datos autónoma de Oracle. AI Vector Search, que incluye un nuevo tipo de datos vectoriales, índices vectoriales y operadores SQL de búsqueda vectorial, permite que Oracle Database almacene el contenido semántico de documentos, imágenes y otros datos no estructurados como vectores, y los utilice para ejecutar consultas rápidas de similitud.
                                 </li>
                             </ol>
                             <p>
@@ -165,7 +154,7 @@
                             </p>
                             <p>
                                 <b>
-                                    Again, there are many different AI application flows and requirements, but a basic comparison of the two approaches can be visualized in the following way:
+                                    Nuevamente, existen muchos flujos y requisitos de aplicaciones de IA diferentes, pero se puede visualizar una comparación básica de los dos enfoques de la siguiente manera:
                                 </b>
                             </p>
 
@@ -174,24 +163,24 @@
                             </div>
                         </div>
                         <h3>
-                            In Conclusion...
+                            En Conclusión...
                        </h3>
+                        <p>
+                            Este fue un blog rápido que muestra un patrón arquitectónico para desarrollar aplicaciones de IA basadas en datos realizando llamadas a servicios de IA directamente desde la base de datos.
+                        </p>
                        <p>
-                        This was a quick blog showing an architectural pattern for developing data-driven AI Apps by making calls to AI services directly from the database.
-                       </p>
-                       <p>
-                        Thanks so much for reading, and please let me know of any questions or feedback you may have.
+                        Muchas gracias por leer y cualquier pregunta o comentario que pueda tener, hágamelo saber.
                        </p>
                     </article>
 
                     <!-- post footer -->
                     <div class="post-footer mb-3">
                         <div class="post-tags d-flex flex-wrap justify-content-center">
-                            <a href="#" class="nav-link btn bg-light">Technology</a>
-                            <a href="#" class="nav-link btn bg-light">Artificial Intelligence</a>
-                            <a href="#" class="nav-link btn bg-light">Bussiness</a>
-                            <a href="#" class="nav-link btn bg-light">Gaming</a>
-                            <a href="#" class="nav-link btn bg-light">Mobile</a>
+                            <a href="#" class="nav-link btn bg-light">Tecnologia</a>
+                            <a href="#" class="nav-link btn bg-light">A.I</a>
+                            <a href="#" class="nav-link btn bg-light">Machine Learning</a>
+                            <a href="#" class="nav-link btn bg-light">Ciberseguridad</a>
+                            <a href="#" class="nav-link btn bg-light">Bases de datos</a>
                         </div>
 
                         <div class="post-author text-center">

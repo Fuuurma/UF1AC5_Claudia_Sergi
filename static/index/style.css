@@ -180,12 +180,21 @@ a{
 /* section styling */
  
 /* ------- Navigation Menu ---------- */
+
+#header{
+    background: linear-gradient(to right, #B5FFFC, #FFDEE9);
+    top: 0;
+    position: sticky;
+    z-index: 100;
+    border-bottom: 2px solid var(--dark);
+}
 .navbar{
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px;
+
 }
 
 .nav-brand{
@@ -257,6 +266,7 @@ a{
     margin-top: 6em;
 }
 
+
 #posts{
     margin-bottom: 5em;
 }
@@ -324,6 +334,10 @@ a{
 /* ----------- footer ---------- */
 #footer{
     padding-top: 4em;
+    background: linear-gradient(to right, #B5FFFC, #FFDEE9);
+    border-top: 2px solid var(--dark);
+    margin-top: 40px;
+
 }
 
 #footer .feature-post .flex-item{
