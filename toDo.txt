@@ -9,3 +9,13 @@ Ojo! Seguramente al aplicar sass por 1a vez sobreescribira el css. Cambiarle el 
 - Hacer about us?
 - next, prev functionaliciad.
 - Algo mas?
+
+art1 ia apps- https://hackernoon.com/how-to-develop-data-driven-ai-apps-a-guide-to-making-ai-services-directly-from-the-database 
+art2 ia politica - https://hackernoon.com/es/como-la-ia-impactara-las-campanas-politicas-en-el-futuro-cercano-todo-comenzo-con-hal-9000
+art3 socialmedia- https://hackernoon.com/es/tecnologias-24-redes-sociales-mas-importantes-para-la-distribucion-de-contenidos
+art4 mobil - https://hackernoon.com/es/la-vida-despues-de-los-telefonos-inteligentes-son-criticos-de-la-caida-de-las-ventas-del-iphone-de-apple-perdiendo-el-panorama-general 
+art5 crypto - https://hackernoon.com/es/2024-podria-ser-el-ano-que-estan-buscando-los-entusiastas-de-las-criptomonedas
+art6 - robotica 
+art7 devops - https://hackernoon.com/es/devops-inteligente-8-lecciones-aprendidas-de-la-naturaleza 
+art8 webscraping - https://hackernoon.com/es/raspado-de-contenido-un-robo-imperdonable-de-creatividad
+art9 cibersecurity - https://hackernoon.com/es/los-ninos-deben-comenzar-a-aprender-ciberseguridad-en-el-momento-en-encienden-su-primera-tableta                       
