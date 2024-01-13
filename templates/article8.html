@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article</title>
+    <title>Tecno Blog</title>
 
     <!-- font awesome icons cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.css" integrity="sha512-m3pAvNriL711NMlhkZHK6K4Tu2/RjtrzyjxZU8mlAbxxoDoURy27KajN1LGTLeEEPvaN12mKAgSCrYEwF9y0jA==" crossorigin="anonymous" />
 
     <!-- custom style.css file -->
+    <!-- <link rel="stylesheet" href="../static/sidebar/style.css"> -->
     <link rel="stylesheet" href="../static/index/style.css">
 
 </head>
 <body>
     
     <!-- Header -->
-       <header id="header" class="shadow bg-light">
+       <header id="header" class="shadow bg-light fixed-nav">
            <nav class="container navbar">
-               <a href="/templates/index.html" class="nav-brand text-dark">
+               <a href="/index.html" class="nav-brand text-dark">
                     Tecno News
                 </a>
 
@@ -32,7 +33,7 @@
                 <!-- collapse on toggle button click -->
                 <div class="collapse">
                     <ul class="navbar-nav">
-                        <a href="index.html" class="nav-link">Inicio</a>
+                        <a href="index.html" class="nav-link">Home</a>
                         <div class="dropdown">
                         <a href="sidebar.html" class="nav-link">Sidebar</a>
                             
@@ -48,7 +49,7 @@
                                 <a href="article9.html" class="nav-link">Article 9</a>
                             </div>
                         </div>
-                        <a href="#" class="nav-link">Sobre nosotros</a>
+                        <a href="#" class="nav-link">About</a>
                     </ul>
                 </div>
 
@@ -58,10 +59,7 @@
                             <div class="search-box">
                                 <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
                             </div>
-                            <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="nav-link"><i class="fab fa-instagram"></i></a>
-                            <a href="#" class="nav-link"><i class="fab fa-dribbble"></i></a>
+                            <a href="#" class="nav-link"><i class="fa fa-user"></i></a>
                       </ul>
                   </div>
            </nav>
@@ -69,174 +67,87 @@
     <!-- .Header -->
 
     <!-- Main Site -->
-       <main id="site-main" class="main-home">
+       <main id="site-main">
+
             <!-- Post Content -->
                 <section class="container">
-                    <article id="post">
-                        <!-- article heading -->
-                        <div class="headings text-center">
-                            <div class="tags">
-                                <a href="#" class="nav-link btn bg-light">Criptomonedas</a>
-                            </div>
-                            
+                    <div class="layout-2 row">
+                        <div class="col-8">
+                            <article id="post">
+                                <!-- article heading -->
+                                <div class="headings text-center">
+                                    <div class="tags mb-3">
+                                        <a href="#" class="nav-link btn bg-light">Inteligencia Artifical</a>
+                                    </div>
+        
+                                    <div class="title">
+                                        <h2 class="text-title text-dark display-1">Crean el robot humanoide más avanzado del mundo inspirado en una persona</h2>
+                                    </div>
+        
+                                    <div class="meta">
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-comments text-primary"></i> 12
+                                            <i class="fas fa-user text-primary"></i> Carlos Pérez
+                                        </a>
+                                        <a href="#" class="link display-2 text-secondary px-1">
+                                            <i class="fas fa-clock text-primary"></i>  18.12.2023
+                                        </a>
+                                    </div>
+        
+                                </div>
+        
+                                <!-- thumbnail  -->
+                                <div class="thumbnail mt-3">
+                                    <img src="https://imagenes.20minutos.es/files/image_640_360/uploads/imagenes/2023/08/21/unitree-h1.webp" class="thumbnail" alt="">
+                                </div>
+        
+                                <!-- content -->
+                                <div class="content text-dark display-2 secondary-title mt-3">
+                                    
+                                    <p>Los avances en la robótica así como en la tecnología van a pasos agigantados y en lo que se refiere a los <b>robots humanoides</b> no es una excepción.
+                                        Este tipo de robots son similares a los seres humanos y puede que <b>en unos 10 años pueden estar presentes en cualquier hogar</b> del mundo, eso sí, a unos
+                                        precios no aptos para todo el mundo.
+                                    </p>
+                                    <p>Estos avances se reflejan perfectamente en la invención que ha realizado la empresa <b>Unitree Robotics</b>, 
+                                        la cual ha creado un robot humanoide llamado <b>Unitree H1</b> que,
+                                        en propias palabras de la compañía, es el de <b>propósito general más avanzado del mundo</b>.
+                                    </p>
+                                    <p><h1>Sus características</h1></p>
+                                    <p>El robot ha sido inspirado para que tenga la apariencia de una persona de complexión media, 
+                                        ya que alcanza los <b>180 cms y pesa unos 47 kilos</b>. También <b>a la hora de andar lo hace a una velocidad promedio</b> de como lo haría una persona, 
+                                        de esta manera buscan que se asemeje lo máximo posible a un humano.
+                                    </p>
+                                    <p>
+                                        Porta consigo una <b>cámara de profundidad y una tecnología de detección remota llamada LIDAR</b> que utiliza la luz reflejada para crear modelos 3D hasta mapas de objetos cercanos, 
+                                        además de <b>dos procesadores Intel Core i7-1265U</b>. 
+                                    </p>
+                                    <p>
+                                        Una de sus <b>características más destacables se encuentra en sus extremidades</b>, 
+                                        ya que posee unas juntas en las piernas que le dan cinco grados de libertad. Sus brazos, en cambio, poseen cuatro grados. 
+                                        Por el momento <b>todavía no posee manos</b>, aunque sus creadores forman que están trabajando en ellas.
+                                    </p>
+                                    <p><h1>Su posible precio</h1></p>
+                                    <p>
+                                        En el momento que pueda estar disponible para su adquisición, y para ello <b>puede tardar entre 3 y 10 años</b>, se cree que podría tener un precio de unos <b>80.000 euros</b>. 
+                                        La empresa china asegura que este robot humanoide estará <b>enfocado al consumo general</b>.
+                                    </p>
 
-                            <div class="title mt-3">
-                                <h2 class="text-title text-dark display-1">2024 podría ser el año que buscan los entusiastas de las criptomonedas</h2>
-                            </div>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                </div>
 
-                            <div class="meta">
-                                <a href="#" class="link display-2 text-secondary px-1">
-                                    <i class="fas fa-user text-primary"></i> Paul Parkinson
-                                </a>
-                                <a href="#" class="link display-2 text-secondary px-1">
-                                    <i class="fas fa-clock text-primary"></i>  JAN 08. 2024
-                                </a>
-                                <a href="#" class="link display-2 text-secondary px-1">
-                                    <i class="fas fa-comments text-primary"></i> 12
-                                </a>
-                            </div>
 
-                        </div>
-
-                        <!-- thumbnail  -->
-                        <div class="thumbnail mt-3">
-                            <img src="../assets/crypto.png" class="thumbnail" alt="">
-                        </div>
-
-                        <!-- content -->
-                        <div class="content text-dark display-2 secondary-title mt-3">
-                            <p>
-                                Después de un largo y frío invierno bajista, entramos en 2024 impulsados por el revuelo emocional de la acción del precio del último trimestre.
-                                <br>
-                                Demos la bienvenida a Crypto Spring con optimismo, curiosidad y los brazos abiertos.
-                            </p>
-                            <p>
-                                <b>
-                                    Las instituciones se están acumulando.
-                                    Los reguladores se están calentando.
-                                    El comercio minorista sigue prácticamente al margen.
-                                </b>
-                                <br>
-                                Sin más preámbulos, repasemos algunas de las emocionantes expectativas que se avecinan para este año:
-                            </p>
-                            <ol id="ol-sidebar">
-                                <li>
-                                    <b>
-                                        La capitalización de mercado se duplicará.
-                                    </b>
-                                    <p>
-                                        Después de alcanzar máximos históricos de aproximadamente ~3 billones en noviembre de 2021, pasamos a ver mínimos de ~800 mil millones en diciembre de 2022 y cerramos 2023/comenzamos 2024 en ~1,65 billones .
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        Los rollups se convierten en impulsores de la industria
-                                    </b>
-                                    <p>
-                                    La escala y la interoperabilidad han sido y seguirán siendo dos de los temas dominantes y existencialmente importantes en la industria de las criptomonedas y los activos digitales durante la próxima década.
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        $BONK supera a $SHIB
-                                    </b>
-                                    <p>
-                                        Cada ciclo tiene una moneda de meme de perro líder, una expresión del meta cultural de última generación; Primero tuvimos DOGE, luego tuvimos SHIB y ahora tenemos BONK. 
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        Airdrops, muchos airdrops.
-                                    </b>
-                                    <p>
-                                        Potentes para atraer atención, generar participación e iniciar la distribución de tokens, los airdrops son la herramienta de marketing definitiva en criptografía.
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        Ethereum superará a Bitcoin. De nuevo.
-                                    </b>
-                                    <p>
-                                        Mientras que Bitcoin ha crecido ~158% en los últimos 365 días, MarketCap creció ~110%, Ethereum ha crecido aproximadamente ~77%.
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        Colapso narrativo de RWA
-                                    </b>
-                                    <p>
-                                        El sector de activos del mundo real llamó algo de atención durante el invierno bajista, y algunos de los proyectos en ese espacio registraron ganancias impresionantes, incluidos RIO (>3,650%) y NXRA (>150%).
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        DEFI renacerá
-                                    </b>
-                                    <p>
-                                        Ser el sector que espera los mayores obstáculos regulatorios probablemente haya sido un factor importante que contribuyó al relativo bajo desempeño de DEFI.
-                                        Para ser justos, las finanzas descentralizadas nunca murieron realmente pero, según lo medido por TVL global, aún no han mostrado signos serios de recuperación.
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        El capital riesgo crecerá
-                                    </b>
-                                    <p>
-                                        Impulsados por el progreso en los tribunales, la apreciación de los precios y la realización de cambios macroeconómicos ineludibles en la liquidez, los capitalistas de riesgo han comenzado una vez más a mostrar interés en las criptomonedas.
-                                        En 2021, ingresaron aproximadamente ~29 mil millones de dólares.
-                                        En 2022, ingresaron aproximadamente ~34 mil millones de dólares.
-                                        En 2023, esa cifra se desplomó a ~11 mil millones.
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        Adopción de BTC por una nueva nación soberana
-                                    </b>
-                                    <p>
-                                        Ecuador ha dado todo el ejemplo con sus operaciones de Bitcoin. La increíble atención internacional que recibió el país por sus políticas con visión de futuro ha invitado a nuevos inmigrantes, ha estimulado a las nuevas empresas tecnológicas e incluso ha reforzado su balance.
-                                    </p>
-                                </li>
-                                <li>
-                                    <b>
-                                        Los mercados emergentes lideran el crecimiento
-                                    </b>
-                                    <p>
-                                        Estados Unidos es conocido por ser el rey del capital. Los consumidores gastan más dinero aquí que lo que ganan otros países. Durante los primeros años de las criptomonedas, fue American Capital el que impulsó a la industria a nuevos máximos; sin embargo, la ridícula postura regulatoria de EE. UU. ha brindado a los mercados emergentes la oportunidad de capturar y controlar el crecimiento de las criptomonedas.
-                                    </p>
-                                </li>
-                            </ol>
-                            <p>
-                                <b>Atención!</b>
-                                <br>
-                                Los detalles específicos son casi imposibles de concretar, pero es muy posible ser direccionalmente correcto.
-                                Eso es lo que estas predicciones deberían esbozar: una posible hoja de ruta/marco para pensar cómo la industria seguirá madurando este año.
-                                Lo único que es seguro,
-                                Es la incertidumbre.
-                                Ahora avanzad con incesante vigilancia, tranquilidad y paz;
-                                Toma tu porción del reino.
-                            </p>
-                           
-                            <div class="img-container">
-                                <img src="../assets/blogAiContentImg.jpeg" alt="AI Image">
-                            </div>
-                        </div>
-                        <h3>
-                            In Conclusion...
-                       </h3>
-                       <p>
-                        This was a quick blog showing an architectural pattern for developing data-driven AI Apps by making calls to AI services directly from the database.
-                       </p>
-                       <p>
-                        Thanks so much for reading, and please let me know of any questions or feedback you may have.
-                       </p>
-                    </article>
-
-                    <!-- post footer -->
+                            </article>
+        
+                            <!-- post footer -->
+                             <!-- post footer -->
                     <div class="post-footer mb-3">
                         <div class="post-tags d-flex flex-wrap justify-content-center">
-                            <a href="#" class="nav-link btn bg-light">Blockchain</a>
-                            <a href="#" class="nav-link btn bg-light">Criptomonedas</a>
-                            <a href="#" class="nav-link btn bg-light">Bitcoin</a>
+                            <a href="#" class="nav-link btn bg-light">Robótica</a>
+                            <a href="#" class="nav-link btn bg-light">I.A</a>
                             <a href="#" class="nav-link btn bg-light">Finanzas</a>
                         </div>
 
@@ -246,10 +157,10 @@
                             </div>
 
                             <div class="author-info py-2 mb-3">
-                                <h3 class="text-dark">Paul Parkinson</h3>
+                                <h3 class="text-dark">Carlos Pérez</h3>
 
                                 <p class="text-secondary secondary-title">
-                                    Inversor, escritor y apasionado por las criptomonedas y las nuevas tecnologias.
+                                    Escritor y programador. Previo CFO en Robot S.A.
                                 </p>
 
                                 <div class="post-tags d-flex flex-wrap justify-content-center">
@@ -262,105 +173,379 @@
 
                         </div>
 
-                        <div class="prev-next-container ">
-                            <div class="left-div">
-                                <div class="py-2">
-                                    <a href="#" class="display-2 text-dark">
-                                        <i class="fas fa-chevron-left"></i> 
-                                        Anterior
-                                    </a>
-                                    <div class="text-title display-2 text-dark mt-2">
-                                        DevOps inteligente: 8 lecciones aprendidas de la naturaleza
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="right-div">
-                                <div class="py-2">
-                                    <a href="#" class="display-2 text-dark">
-                                        Siguiente 
-                                        <i class="fas fa-chevron-right"></i> 
-                                    </a>
-                                    <div class="text-title display-2 text-dark px-2 mt-2">
-                                        Las 24 redes sociales más importantes de la tecnología para la distribución de contenidos
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-
                         
 
-                        <div class="post-comments py-2">
-                            <h3 class="text-center display-1 secondary-title py-2">5 Comentarios</h3>
-    
-                            <div class="comment-details">
-                                <div class="comment-item py-2">
-                                    <div class="d-flex">
-                                        <div class="avatar px-2">
-                                            <img src="../assets/face/face1.jpg" class="rounded" alt="">
-                                        </div>
-                                        <div class="comment-content">
-                                            <h5 class="display-2 m-0">User 1 </h5>
-                                            <p class="title-secondary text-dark">
-                                                Pedazo articulo chaval! 
-                                            </p>
-                                        </div>
-                                    </div>
-                                     <!-- comment reply -->
-                                     <div class="reply py-2">
-                                        <div class="d-flex">
-                                            <div class="avatar px-2">
-                                                <img src="../assets/face/face2.jpg" class="rounded" alt="">
-                                            </div>
-                                            <div class="comment-content">
-                                                <h5 class="display-2 m-0">User 2 reply</h5>
-                                                <p class="title-secondary text-dark">
-                                                    Articulo muy bien escrito. Estoy totalmente en contra por eso.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-    
-                                </div>
-                                <div class="comment-item py-2">
-                                    <div class="d-flex">
-                                        <div class="avatar px-2">
-                                            <img src="../assets/face/face3.jpg" class="rounded" alt="">
-                                        </div>
-                                        <div class="comment-content">
-                                            <h5 class="display-2 m-0">User 3 </h5>
-                                            <p class="title-secondary text-dark">
-                                                Comentario Comentario Comentario Comentario Comentario
-                                            </p>
-    
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-    
+                    </div>
+                    <!-- .post footer -->
+                            <!-- .post footer -->
+                        </div>
+                        <div class="col-4">
+                            <aside id="sidebar" class="px-1">
 
-                            <h3 class="text-center display-1 secondary-title mt-3">Deja tu comentario!</h3>
-    
-                            <div class="comment-form px-2 py-3">
-                                <div class="d-flex justify-content-between flex-wrap">
-                                    <input type="text" class="form-control mb-3" placeholder="Nombre...">
-                                    <input type="email" class="form-control mb-3" placeholder="Email...">
+                                <!-- categories -->
+                                <section class="categories">
+                                    <h2 class="text-center text-dark">Categories</h2>
+
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>Tecnologia</span>
+                                        <span>12</span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>AI</span>
+                                        <span>8</span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>Finanzas</span>
+                                        <span>5</span>
+                                    </a>
+                                    <a href="#" class="d-flex justify-content-between text-dark">
+                                        <span>Gaming</span>
+                                        <span>3</span>
+                                    </a>
+                                </section>
+
+                                <!-- Trending post -->
+                                <section class="trending-post mt-3">
+
+                                    <h2 class="text-center text-dark py-2">Recomendados</h2>
+
+                                    <!-- post-items -->
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="/templates/article.html">
+                                                    <img src="../assets/openai.webp" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="/templates/article.html" class="link text-primary">
+                                                            Inteligencia Artificial
+                                                        </a>
+                                                    </div>
+                                                    <a href="/templates/article.html" class="text-title display-2 text-dark">
+                                                        Cómo desarrollar aplicaciones de IA basadas en datos         </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                            JAN 10. 2024
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                       <!-- post-items -->
+                                       <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="/templates/article2.html">
+                                                    <img src="../assets/ai2.webp" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="/templates/article2.html" class="link text-primary">
+                                                            Inteligencia Artificial
+                                                        </a>
+                                                    </div>
+                                                    <a href="/templates/article2.html" class="text-title display-2 text-dark">
+                                                        Cómo afectará la IA a las campañas políticas en un futuro próximo: todo comenzó con Hal-9000
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             JAN 8. 2024
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                        </div>
+                                        <div class="post-item py-1">
+                                            <article class="article">
+                                                <div class="d-flex">
+                                                    <a href="/templates/article3.html">
+                                                        <img src="../assets/wifi-logo.webp" class="rounded px-1" alt="">
+                                                    </a>
+                                                    <div class="cart-body">
+                                                        <div class="trending-category">
+                                                            <a href="/templates/article3.html" class="link text-primary">
+                                                                MOBIL
+                                                            </a>
+                                                        </div>
+                                                        <a href="/templates/article3.html" class="text-title display-2 text-dark">
+                                                            Las 24 redes sociales más importantes de la tecnología para la distribución de contenidos
+                                                        </a>
+                                                        <p class="secondary-title text-secondary display-3">
+                                                            <span>
+                                                                <i class="far fa-clock text-primary"></i>
+                                                                 JAN 2. 2024
+                                                            </span>
+                                                        </p>                                                    
+                                                    </div>
+                                                </div>
+                                            </article>
+                                            </div>
+                                            <div class="post-item py-1">
+                                                <article class="article">
+                                                    <div class="d-flex">
+                                                        <a href="/templates/article4.html">
+                                                            <img src="../assets/logo_blog_tech.jpeg" class="rounded px-1" alt="">
+                                                        </a>
+                                                        <div class="cart-body">
+                                                            <div class="trending-category">
+                                                                <a href="/templates/article4.html" class="link text-primary">
+                                                                    MOBIL
+                                                                </a>
+                                                            </div>
+                                                            <a href="/templates/article4.html" class="text-title display-2 text-dark">
+                                                                La vida después de los Smartphones: ¿La caída en ventas de Apple. están perdiendo la visión?
+                                                            </a>
+                                                            <p class="secondary-title text-secondary display-3">
+                                                                <span>
+                                                                    <i class="far fa-clock text-primary"></i>
+                                                                     JAN 8. 2024
+                                                                </span>
+                                                            </p>                                                    
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                </div>
+                                                
+                                                    <div class="post-item py-1">
+                                                        <article class="article">
+                                                            <div class="d-flex">
+                                                                <a href="/templates/article5.html">
+                                                                    <img src="../assets/crypto.png" class="rounded px-1" alt="">
+                                                                </a>
+                                                                <div class="cart-body">
+                                                                    <div class="trending-category">
+                                                                        <a href="/templates/article5.html" class="link text-primary">
+                                                                            web3
+                                                                        </a>
+                                                                    </div>
+                                                                    <a href="/templates/article5.html" class="text-title display-2 text-dark">
+                                                                        2024 podría ser el año que buscan los entusiastas de las criptomonedas
+                                                                    </a>
+                                                                    <p class="secondary-title text-secondary display-3">
+                                                                        <span>
+                                                                            <i class="far fa-clock text-primary"></i>
+                                                                             JAN 8. 2024
+                                                                        </span>
+                                                                    
+                                                                    </p>                                                    
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        </div>
+                                                        <div class="post-item py-1">
+                                                            <article class="article">
+                                                                <div class="d-flex">
+                                                                    <a href="/templates/article6.html">
+                                                                       
+                                                                        <img src="../assets/socialmedia.jpg" class="rounded px-1" alt="">
+                                                                    </a>
+                                                                    <div class="cart-body">
+                                                                        <div class="trending-category">
+                                                                            <a href="/templates/article6.html" class="link text-primary">
+                                                                                ROBOTICA
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href="/templates/article6.html" class="text-title display-2 text-dark">
+                                                                            Crean el robot humanoide más avanzado del mundo inspirado en una persona
+                                                                        </a>
+                                                                        <p class="secondary-title text-secondary display-3">
+                                                                            <span>
+                                                                                <i class="far fa-clock text-primary"></i>
+                                                                                DEC 18. 2023
+                                                                            </span>
+                                                                        </p>                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                            </div>
+                                                        <div class="post-item py-1">
+                                                            <article class="article">
+                                                                <div class="d-flex">
+                                                                    <a href="/templates/article7.html">
+                                                                        <img src="../assets/ai.webp" class="rounded px-1" alt="">
+                                                                    </a>
+                                                                    <div class="cart-body">
+                                                                        <div class="trending-category">
+                                                                            <a href="/templates/article7.html" class="link text-primary">
+                                                                                SISTEMAS
+                                                                            </a>
+                                                                        </div>
+                                                                        <a href="/templates/article7.html" class="text-title display-2 text-dark">
+                                                                            DevOps inteligente: 8 lecciones aprendidas de la naturaleza
+                                                                        </a>
+                                                                        <p class="secondary-title text-secondary display-3">
+                                                                            <span>
+                                                                                <i class="far fa-clock text-primary"></i>
+                                                                                 DEC 18. 2023
+                                                                            </span>
+                                                                        </p>                                                    
+                                                                    </div>
+                                                                </div>
+                                                            </article>
+                                                            </div>
+
+                                           <!-- post-items -->
+                                    <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="/templates/article8.html">
+                                                    <img src="../assets/comuicationImg.webp" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="/templates/article8.html" class="link text-primary">
+                                                            MOBIL
+                                                        </a>
+                                                    </div>
+                                                    <a href="/templates/article8.html" class="text-title display-2 text-dark">
+                                                        Scraping de contenido: un robo imperdonable de creatividad
+                                                    </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                            JAN 10. 2024
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                       <!-- post-items -->
+                                       <div class="post-item py-1">
+                                        <article class="article">
+                                            <div class="d-flex">
+                                                <a href="/templates/article9.html">
+                                                    <img src="../assets/logo_blog_tech.jpeg" class="rounded px-1" alt="">
+                                                </a>
+                                                <div class="cart-body">
+                                                    <div class="trending-category">
+                                                        <a href="/templates/article9.html" class="link text-primary">
+                                                            CIBERSEGURIDAD
+                                                        </a>
+                                                    </div>
+                                                    <a href="/templates/article9.html" class="text-title display-2 text-dark">
+                                                        Los niños deberían empezar a aprender ciberseguridad   </a>
+                                                    <p class="secondary-title text-secondary display-3">
+                                                        <span>
+                                                            <i class="far fa-clock text-primary"></i>
+                                                             JAN 09. 2024
+                                                        </span>
+                                                    </p>                                                    
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+
+                                </section>
+
+                            </aside>
+                        </div>
+                    </div>
+
+
+                </section>
+            <!-- .Post Content -->
+
+            <div class="prev-next-container ">
+                <div class="left-div">
+                    <div class="py-2">
+                        <a href="#" class="display-2 text-dark">
+                            <i class="fas fa-chevron-left"></i> 
+                            Anterior
+                        </a>
+                        <div class="text-title display-2 text-dark mt-2">
+                            DevOps inteligente: 8 lecciones aprendidas de la naturaleza
+                        </div>
+                    </div>
+                </div>
+                <div class="right-div">
+                    <div class="py-2">
+                        <a href="#" class="display-2 text-dark">
+                            Siguiente 
+                            <i class="fas fa-chevron-right"></i> 
+                        </a>
+                        <div class="text-title display-2 text-dark px-2 mt-2">
+                            Las 24 redes sociales más importantes de la tecnología para la distribución de contenidos
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+            
+
+            <div class="post-comments py-2">
+                <h3 class="text-center display-1 secondary-title py-2">5 Comentarios</h3>
+
+                <div class="comment-details">
+                    <div class="comment-item py-2">
+                        <div class="d-flex">
+                            <div class="avatar px-2">
+                                <img src="../assets/face/face1.jpg" class="rounded" alt="">
+                            </div>
+                            <div class="comment-content">
+                                <h5 class="display-2 m-0">User 1 </h5>
+                                <p class="title-secondary text-dark">
+                                    Pedazo articulo chaval! 
+                                </p>
+                            </div>
+                        </div>
+                         <!-- comment reply -->
+                         <div class="reply py-2">
+                            <div class="d-flex">
+                                <div class="avatar px-2">
+                                    <img src="../assets/face/face2.jpg" class="rounded" alt="">
                                 </div>
-                                <textarea class="form-control" placeholder="Mensaje..." rows="5"></textarea>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary display-2 text-light mt-2">Submit</button>
+                                <div class="comment-content">
+                                    <h5 class="display-2 m-0">User 2 reply</h5>
+                                    <p class="title-secondary text-dark">
+                                        Articulo muy bien escrito. Estoy totalmente en contra por eso.
+                                    </p>
                                 </div>
                             </div>
                         </div>
 
                     </div>
-                    <!-- .post footer -->
+                    <div class="comment-item py-2">
+                        <div class="d-flex">
+                            <div class="avatar px-2">
+                                <img src="../assets/face/face3.jpg" class="rounded" alt="">
+                            </div>
+                            <div class="comment-content">
+                                <h5 class="display-2 m-0">User 3 </h5>
+                                <p class="title-secondary text-dark">
+                                    Comentario Comentario Comentario Comentario Comentario
+                                </p>
 
-                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h3 class="text-center display-1 secondary-title mt-3">Deja tu comentario!</h3>
+
+                <div class="comment-form px-2 py-3">
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <input type="text" class="form-control mb-3" placeholder="Nombre...">
+                        <input type="email" class="form-control mb-3" placeholder="Email...">
+                    </div>
+                    <textarea class="form-control" placeholder="Mensaje..." rows="5"></textarea>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary display-2 text-light mt-2">Submit</button>
+                    </div>
+                </div>
+            </div>
 
        </main>
     <!-- .Main Site -->
 
-  
    <!-- footer -->
    <footer id="footer">
     <div class="container">
@@ -495,6 +680,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.5/swiper-bundle.min.js" integrity="sha512-1LlEYE0qExJ/GUfAJ0k2K2fB5sIvMv/q6ueo3syohvQ3ElWDQVSMUOf39cxaDWHtNu7M6lF6ZC1H6A1m3SvheA==" crossorigin="anonymous"></script>
 
     <!-- custom javascript main.js file -->
-    <script src="/static/article/main.js"></script>
+    <script src="../static/sidebar/main.js"></script>
 </body>
 </html>

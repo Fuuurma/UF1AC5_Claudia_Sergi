@@ -536,6 +536,15 @@ a{
 
 /* ----------- .sidebar page ------- */
 
+.post-item{
+    border: 2px solid var(--secondary);
+    border-left: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--primary-color);
+    border-radius: 16px;
+    padding: 20px 8px;
+    margin: 18px 10px;
+}
+
 /* ----------- sticky ------- */
 
 .sticky{
